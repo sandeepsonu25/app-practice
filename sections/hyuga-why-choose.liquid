@@ -1,0 +1,154 @@
+<div class="hyuga-app">
+  <div class="hyuga-wrap">
+    <section class="hyuga-why">
+      <div class="hyuga-why__head">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="hyuga-why__title">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.badge_text != blank -%}
+          <span class="hyuga-why__badge">{{ section.settings.badge_text }}</span>
+        {%- endif -%}
+      </div>
+
+      <div class="hyuga-why__card">
+        {%- for block in section.blocks -%}
+          <div class="hyuga-why__item" {{ block.shopify_attributes }}>
+            <div class="hyuga-why__icon" aria-hidden="true">
+              {%- if block.settings.icon != blank -%}
+                <img
+                  src="{{ block.settings.icon | image_url: width: 120 }}"
+                  alt=""
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                >
+              {%- elsif block.settings.icon_url != blank -%}
+                <img src="{{ block.settings.icon_url }}" alt="" width="48" height="48" loading="lazy">
+              {%- else -%}
+                {%- case block.settings.icon_preset -%}
+                  {%- when 'shipping' -%}
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 18h26v14H16.5a3.5 3.5 0 0 1-7 0H8a4 4 0 0 1-4-4V18z" fill="#4C6FFF"/>
+                      <path d="M30 22h7.2L42 28.5V32h-3.2a3.5 3.5 0 0 1-6.6 0H30V22z" fill="#4C6FFF"/>
+                      <circle cx="13" cy="32" r="2.2" fill="#fff"/>
+                      <circle cx="36.5" cy="32" r="2.2" fill="#fff"/>
+                      <rect x="8" y="21" width="14" height="6" rx="1.5" fill="#fff"/>
+                      <text x="15" y="25.8" text-anchor="middle" fill="#4C6FFF" font-size="5.5" font-weight="800" font-family="Inter, Arial, sans-serif">FREE</text>
+                    </svg>
+                  {%- when 'genuine' -%}
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 6l14 5v11.5c0 9.2-5.8 17.2-14 19.5-8.2-2.3-14-10.3-14-19.5V11l14-5z" fill="#4C6FFF"/>
+                      <path d="M17.5 23.2l4.2 4.2 8.8-8.8" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  {%- when 'returns' -%}
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 12h16l6 6v16a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z" fill="#4C6FFF"/>
+                      <path d="M30 12v6h6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20 28a6 6 0 1 0 5.3-3.2" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+                      <path d="M25.3 21.5v3.3h-3.3" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  {%- else -%}
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="16" fill="#4C6FFF"/>
+                      <path d="M16 24l5 5 11-11" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                {%- endcase -%}
+              {%- endif -%}
+            </div>
+            <div class="hyuga-why__copy">
+              {%- if block.settings.title != blank -%}
+                <h3>{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <p>{{ block.settings.text }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </section>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga why choose",
+  "tag": "section",
+  "class": "hyuga-section-root",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Choose HyugaLife?"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Trust badge text",
+      "default": "5 lakhs+ Trusted Buyers"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_preset",
+          "label": "Built-in icon",
+          "options": [
+            { "value": "shipping", "label": "Free shipping truck" },
+            { "value": "genuine", "label": "Genuine shield" },
+            { "value": "returns", "label": "Easy returns" },
+            { "value": "check", "label": "Check circle" }
+          ],
+          "default": "shipping"
+        },
+        { "type": "image_picker", "id": "icon", "label": "Custom icon" },
+        { "type": "text", "id": "icon_url", "label": "Icon URL fallback" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Free shipping" },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Get free delivery on orders above ₹399!"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Hyuga why choose",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon_preset": "shipping",
+            "title": "Free shipping",
+            "text": "Get free delivery on orders above ₹399!"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_preset": "genuine",
+            "title": "100% Genuine",
+            "text": "Products sourced directly from the brands!"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_preset": "returns",
+            "title": "Easy Returns",
+            "text": "Simple and easy returns with just a few clicks"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

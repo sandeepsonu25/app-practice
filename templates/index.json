@@ -314,346 +314,6 @@
         "mobile_link": ""
       }
     },
-    "offers": {
-      "type": "hyuga-image-row",
-      "blocks": {
-        "i1": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
-            "title": "DHAMAKA8",
-            "link": "#"
-          }
-        },
-        "item_gyDgjK": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
-            "title": "DHAMAKA8",
-            "link": "#"
-          }
-        },
-        "i2": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEBcoupan_4.png",
-            "title": "DHAMAKA5",
-            "link": ""
-          }
-        },
-        "i3": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
-            "title": "Flat ₹50 Off",
-            "link": ""
-          }
-        },
-        "item_akVjiQ": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
-            "title": "Flat ₹50 Off",
-            "link": ""
-          }
-        },
-        "i4": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
-            "title": "Buy 1 Get 1 Free Offer",
-            "link": ""
-          }
-        },
-        "item_Fc8hBf": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
-            "title": "Buy 1 Get 1 Free Offer",
-            "link": ""
-          }
-        },
-        "item_BjeyL3": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
-            "title": "Buy 1 Get 1 Free Offer",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "item_gyDgjK",
-        "i2",
-        "i3",
-        "item_akVjiQ",
-        "i4",
-        "item_Fc8hBf",
-        "item_BjeyL3"
-      ],
-      "settings": {
-        "heading": "Health to Start With",
-        "button_label": "",
-        "button_link": "",
-        "layout": "rail",
-        "card_style": "category"
-      }
-    },
-    "hyuga_image_row_XA6zGd": {
-      "type": "hyuga-image-row",
-      "blocks": {
-        "item_nBPJPC": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
-            "title": "DHAMAKA8",
-            "link": "#"
-          }
-        },
-        "item_egLNiM": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
-            "title": "DHAMAKA8",
-            "link": "#"
-          }
-        },
-        "item_LkpPaz": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEBcoupan_4.png",
-            "title": "DHAMAKA5",
-            "link": ""
-          }
-        },
-        "item_8L3r9Q": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
-            "title": "Flat ₹50 Off",
-            "link": ""
-          }
-        },
-        "item_KdRCat": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
-            "title": "Flat ₹50 Off",
-            "link": ""
-          }
-        },
-        "item_7X7VXz": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
-            "title": "Buy 1 Get 1 Free Offer",
-            "link": ""
-          }
-        },
-        "item_KzEeA4": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
-            "title": "Buy 1 Get 1 Free Offer",
-            "link": ""
-          }
-        },
-        "item_pBRNGy": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
-            "title": "Buy 1 Get 1 Free Offer",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_nBPJPC",
-        "item_egLNiM",
-        "item_LkpPaz",
-        "item_8L3r9Q",
-        "item_KdRCat",
-        "item_7X7VXz",
-        "item_KzEeA4",
-        "item_pBRNGy"
-      ],
-      "settings": {
-        "heading": "Stronger Days Start Here",
-        "button_label": "",
-        "button_link": "",
-        "layout": "rail",
-        "card_style": "category"
-      }
-    },
-    "products": {
-      "type": "hyuga-products",
-      "blocks": {
-        "p1": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_cocoa_chocolate-_front_1.png",
-            "title": "Avvatar Alpha Whey Belgian Chocolate 1kg",
-            "price": "3,499",
-            "compare": "4,999",
-            "off": "30",
-            "rating": "4.7",
-            "link": ""
-          }
-        },
-        "p2": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsnb33w4.png",
-            "title": "MuscleBlaze Biozyme Performance Whey 1kg",
-            "price": "2,669",
-            "compare": "3,499",
-            "off": "24",
-            "rating": "4.5",
-            "link": ""
-          }
-        },
-        "p3": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsgp48s8.png",
-            "title": "MuscleTech Nitro-Tech Whey Protein 2lbs",
-            "price": "3,883",
-            "compare": "5,299",
-            "off": "27",
-            "rating": "4.6",
-            "link": ""
-          }
-        },
-        "p4": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo5.png",
-            "title": "ON Gold Standard 100% Whey 2lbs",
-            "price": "4,722",
-            "compare": "6,199",
-            "off": "24",
-            "rating": "4.8",
-            "link": ""
-          }
-        },
-        "p5": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo6.png",
-            "title": "GNC Pro Performance Power Protein 2lbs",
-            "price": "3,749",
-            "compare": "4,999",
-            "off": "25",
-            "rating": "4.4",
-            "link": ""
-          }
-        },
-        "p6": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_kesar_kulfi-_front.png",
-            "title": "Avvatar Performance Whey Malai Kulfi 1kg",
-            "price": "3,499",
-            "compare": "4,799",
-            "off": "27",
-            "rating": "4.6",
-            "link": ""
-          }
-        },
-        "p7": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hscw46n7_1.png",
-            "title": "MuscleBlaze Fish Oil Gold 60 Capsules",
-            "price": "699",
-            "compare": "999",
-            "off": "30",
-            "rating": "4.5",
-            "link": ""
-          }
-        },
-        "p8": {
-          "type": "product",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsrj29a4.png",
-            "title": "Creatine Monohydrate Unflavoured 250g",
-            "price": "749",
-            "compare": "1,199",
-            "off": "38",
-            "rating": "4.7",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4",
-        "p5",
-        "p6",
-        "p7",
-        "p8"
-      ],
-      "settings": {
-        "heading": "Bestsellers",
-        "button_label": "View all",
-        "button_link": "",
-        "collection": "",
-        "limit": 8
-      }
-    },
-    "focus": {
-      "type": "hyuga-image-row",
-      "blocks": {
-        "i1": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Glutathione_16_3.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i2": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Magnesium_2.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i3": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Collagen_50_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i4": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/ACV-2.png",
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4"
-      ],
-      "settings": {
-        "heading": "Purpose-Built Supplements",
-        "button_label": "",
-        "button_link": "",
-        "layout": "hyuga-focus",
-        "card_style": "offer"
-      }
-    },
     "fitness": {
       "type": "hyuga-image-row",
       "blocks": {
@@ -826,6 +486,634 @@
         "card_style": "category"
       }
     },
+    "offers": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "item_gyDgjK": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEBcoupan_4.png",
+            "title": "DHAMAKA5",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "item_akVjiQ": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_Fc8hBf": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_BjeyL3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "item_gyDgjK",
+        "i2",
+        "i3",
+        "item_akVjiQ",
+        "i4",
+        "item_Fc8hBf",
+        "item_BjeyL3"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Health to Start With",
+        "button_label": "",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "category"
+      }
+    },
+    "products": {
+      "type": "hyuga-products",
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_cocoa_chocolate-_front_1.png",
+            "title": "Avvatar Alpha Whey Belgian Chocolate 1kg",
+            "price": "3,499",
+            "compare": "4,999",
+            "off": "30",
+            "rating": "4.7",
+            "link": ""
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsnb33w4.png",
+            "title": "MuscleBlaze Biozyme Performance Whey 1kg",
+            "price": "2,669",
+            "compare": "3,499",
+            "off": "24",
+            "rating": "4.5",
+            "link": ""
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsgp48s8.png",
+            "title": "MuscleTech Nitro-Tech Whey Protein 2lbs",
+            "price": "3,883",
+            "compare": "5,299",
+            "off": "27",
+            "rating": "4.6",
+            "link": ""
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo5.png",
+            "title": "ON Gold Standard 100% Whey 2lbs",
+            "price": "4,722",
+            "compare": "6,199",
+            "off": "24",
+            "rating": "4.8",
+            "link": ""
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo6.png",
+            "title": "GNC Pro Performance Power Protein 2lbs",
+            "price": "3,749",
+            "compare": "4,999",
+            "off": "25",
+            "rating": "4.4",
+            "link": ""
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_kesar_kulfi-_front.png",
+            "title": "Avvatar Performance Whey Malai Kulfi 1kg",
+            "price": "3,499",
+            "compare": "4,799",
+            "off": "27",
+            "rating": "4.6",
+            "link": ""
+          }
+        },
+        "p7": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hscw46n7_1.png",
+            "title": "MuscleBlaze Fish Oil Gold 60 Capsules",
+            "price": "699",
+            "compare": "999",
+            "off": "30",
+            "rating": "4.5",
+            "link": ""
+          }
+        },
+        "p8": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsrj29a4.png",
+            "title": "Creatine Monohydrate Unflavoured 250g",
+            "price": "749",
+            "compare": "1,199",
+            "off": "38",
+            "rating": "4.7",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8"
+      ],
+      "settings": {
+        "heading": "Bestsellers",
+        "button_label": "View all",
+        "button_link": "",
+        "collection": "",
+        "limit": 8
+      }
+    },
+    "stack": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/fitness_focus_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/omega_3_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/smart_snack_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/new_to_protein_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/gas_issue_1.5x_3.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ],
+      "settings": {
+        "heading": "Your Body Needs More Than Just Vitamins",
+        "button_label": "",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "offer"
+      }
+    },
+    "hyuga_hero_cYVY6D": {
+      "type": "hyuga-hero",
+      "blocks": {
+        "slide_xchMqy": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar-1440x360_2x_11.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar540x270_2x_4.png",
+            "alt": "Home Page Sale banner 3",
+            "link": ""
+          }
+        },
+        "slide_zkeRHH": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BIO-D-WEBBIO_1__2.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BIO-M-WEBBIO_1__2.png",
+            "alt": "Home Page Banner 1",
+            "link": ""
+          }
+        },
+        "slide_qgH7TR": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/TWT_Web_1__3.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/TWT_Mweb_1__3.jpg",
+            "alt": "Home Page Banner 3",
+            "link": ""
+          }
+        },
+        "slide_n6X9C3": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/Web_Banner_2_30.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/Mweb_Banner_28.png",
+            "alt": "Home Page Banner 4",
+            "link": ""
+          }
+        },
+        "slide_E9KFVh": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/1440px_x_360px_3x_21.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/540px_x_270px_3x_21.jpg",
+            "alt": "Home Page Banner 5",
+            "link": ""
+          }
+        },
+        "slide_wgPcrE": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/All_products.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/All_products-MView.png",
+            "alt": "Home Page Banner 6",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_xchMqy",
+        "slide_zkeRHH",
+        "slide_qgH7TR",
+        "slide_n6X9C3",
+        "slide_E9KFVh",
+        "slide_wgPcrE"
+      ],
+      "settings": {}
+    },
+    "hyuga_image_row_XA6zGd": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "item_nBPJPC": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "item_egLNiM": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "item_LkpPaz": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEBcoupan_4.png",
+            "title": "DHAMAKA5",
+            "link": ""
+          }
+        },
+        "item_8L3r9Q": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "item_KdRCat": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "item_7X7VXz": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_KzEeA4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_pBRNGy": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_nBPJPC",
+        "item_egLNiM",
+        "item_LkpPaz",
+        "item_8L3r9Q",
+        "item_KdRCat",
+        "item_7X7VXz",
+        "item_KzEeA4",
+        "item_pBRNGy"
+      ],
+      "settings": {
+        "heading": "Stronger Days Start Here",
+        "button_label": "",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "category"
+      }
+    },
+    "focus": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Glutathione_16_3.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Magnesium_2.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Collagen_50_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/ACV-2.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Purpose-Built Supplements",
+        "button_label": "",
+        "button_link": "",
+        "layout": "hyuga-focus",
+        "card_style": "offer"
+      }
+    },
+    "why_choose": {
+      "type": "hyuga-why-choose",
+      "blocks": {
+        "shipping": {
+          "type": "feature",
+          "settings": {
+            "icon_preset": "shipping",
+            "icon_url": "",
+            "title": "Free shipping",
+            "text": "Get free delivery on orders above ₹399!"
+          }
+        },
+        "genuine": {
+          "type": "feature",
+          "settings": {
+            "icon_preset": "genuine",
+            "icon_url": "",
+            "title": "100% Genuine",
+            "text": "Products sourced directly from the brands!"
+          }
+        },
+        "returns": {
+          "type": "feature",
+          "settings": {
+            "icon_preset": "returns",
+            "icon_url": "",
+            "title": "Easy Returns",
+            "text": "Simple and easy returns with just a few clicks"
+          }
+        }
+      },
+      "block_order": [
+        "shipping",
+        "genuine",
+        "returns"
+      ],
+      "settings": {
+        "heading": "Why Choose HyugaLife?",
+        "badge_text": "5 lakhs+ Trusted Buyers"
+      }
+    },
+    "hyuga_products_4BieGn": {
+      "type": "hyuga-products",
+      "blocks": {
+        "product_MhqTLD": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_cocoa_chocolate-_front_1.png",
+            "title": "Avvatar Alpha Whey Belgian Chocolate 1kg",
+            "price": "3,499",
+            "compare": "4,999",
+            "off": "30",
+            "rating": "4.7",
+            "link": ""
+          }
+        },
+        "product_fwgYzL": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsnb33w4.png",
+            "title": "MuscleBlaze Biozyme Performance Whey 1kg",
+            "price": "2,669",
+            "compare": "3,499",
+            "off": "24",
+            "rating": "4.5",
+            "link": ""
+          }
+        },
+        "product_GVwJEQ": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsgp48s8.png",
+            "title": "MuscleTech Nitro-Tech Whey Protein 2lbs",
+            "price": "3,883",
+            "compare": "5,299",
+            "off": "27",
+            "rating": "4.6",
+            "link": ""
+          }
+        },
+        "product_4EQaEU": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo5.png",
+            "title": "ON Gold Standard 100% Whey 2lbs",
+            "price": "4,722",
+            "compare": "6,199",
+            "off": "24",
+            "rating": "4.8",
+            "link": ""
+          }
+        },
+        "product_7BWNKh": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo6.png",
+            "title": "GNC Pro Performance Power Protein 2lbs",
+            "price": "3,749",
+            "compare": "4,999",
+            "off": "25",
+            "rating": "4.4",
+            "link": ""
+          }
+        },
+        "product_BhGCAm": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_kesar_kulfi-_front.png",
+            "title": "Avvatar Performance Whey Malai Kulfi 1kg",
+            "price": "3,499",
+            "compare": "4,799",
+            "off": "27",
+            "rating": "4.6",
+            "link": ""
+          }
+        },
+        "product_DYpa9U": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hscw46n7_1.png",
+            "title": "MuscleBlaze Fish Oil Gold 60 Capsules",
+            "price": "699",
+            "compare": "999",
+            "off": "30",
+            "rating": "4.5",
+            "link": ""
+          }
+        },
+        "product_PrPMCe": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsrj29a4.png",
+            "title": "Creatine Monohydrate Unflavoured 250g",
+            "price": "749",
+            "compare": "1,199",
+            "off": "38",
+            "rating": "4.7",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_MhqTLD",
+        "product_fwgYzL",
+        "product_GVwJEQ",
+        "product_4EQaEU",
+        "product_7BWNKh",
+        "product_BhGCAm",
+        "product_DYpa9U",
+        "product_PrPMCe"
+      ],
+      "settings": {
+        "heading": "H-Tested Proteins & Supplements",
+        "button_label": "View all",
+        "button_link": "",
+        "collection": "",
+        "limit": 8
+      }
+    },
     "brands": {
       "type": "hyuga-image-row",
       "blocks": {
@@ -917,7 +1205,7 @@
         "heading": "Star Brands of the Season",
         "button_label": "",
         "button_link": "",
-        "layout": "hyuga-brand-grid",
+        "layout": "rail",
         "card_style": "offer"
       }
     },
@@ -1057,65 +1345,6 @@
         "card_style": "offer"
       }
     },
-    "stack": {
-      "type": "hyuga-image-row",
-      "blocks": {
-        "i1": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/fitness_focus_1.5x_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i2": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/omega_3_1.5x_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i3": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/smart_snack_1.5x_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i4": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/new_to_protein_1.5x_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i5": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/gas_issue_1.5x_3.png",
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4",
-        "i5"
-      ],
-      "settings": {
-        "heading": "Your Body Needs More Than Just Vitamins",
-        "button_label": "",
-        "button_link": "",
-        "layout": "rail",
-        "card_style": "offer"
-      }
-    },
     "deals": {
       "type": "hyuga-image-row",
       "blocks": {
@@ -1171,16 +1400,19 @@
     "bubbles",
     "hero",
     "promo",
-    "offers",
-    "hyuga_image_row_XA6zGd",
-    "products",
-    "focus",
     "fitness",
     "health",
+    "offers",
+    "products",
+    "stack",
+    "hyuga_hero_cYVY6D",
+    "hyuga_image_row_XA6zGd",
+    "focus",
+    "why_choose",
+    "hyuga_products_4BieGn",
     "brands",
     "pantry",
     "protein",
-    "stack",
     "deals"
   ]
 }
