@@ -5,25 +5,47 @@
     "footer": {
       "type": "footer",
       "disabled": true,
-      "settings": {
-        "color_scheme": "inverse",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": false,
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": true,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "settings": {}
     },
     "hyuga-footer": {
       "type": "hyuga-footer",
-      "settings": {}
+      "blocks": {
+        "shop": {
+          "type": "column",
+          "settings": {
+            "heading": "Shop",
+            "links": "<p>Whey Protein<br/>Creatine<br/>Multivitamins<br/>Omega 3<br/>Collagen<br/>Healthy Snacks</p>"
+          }
+        },
+        "categories": {
+          "type": "column",
+          "settings": {
+            "heading": "Categories",
+            "links": "<p>Sports Nutrition<br/>Health Supplements<br/>Health Foods &amp; Beverages<br/>Hair, Skin &amp; Nails<br/>Women's Health<br/>Ayurvedic &amp; Herbal</p>"
+          }
+        },
+        "support": {
+          "type": "column",
+          "settings": {
+            "heading": "Support",
+            "links": "<p>Chat with Expert<br/>Authenticity guarantee<br/>Easy returns<br/>Free shipping<br/>Call 1800 267 1155</p>"
+          }
+        }
+      },
+      "block_order": [
+        "shop",
+        "categories",
+        "support"
+      ],
+      "settings": {
+        "logo_url": "",
+        "about": "India's largest protein and supplement store. 100% genuine products sourced from 300+ brands.",
+        "copyright": "\u00a9 2026 HyugaLife. All rights reserved."
+      }
     }
   },
-  "order": ["footer", "hyuga-footer"]
+  "order": [
+    "footer",
+    "hyuga-footer"
+  ]
 }

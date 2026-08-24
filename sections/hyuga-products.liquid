@@ -1,11 +1,7 @@
-{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
-
 {%- liquid
   assign use_live = false
-  if section.settings.collection != blank
-    if section.settings.collection.products.size > 0
-      assign use_live = true
-    endif
+  if section.settings.collection != blank and section.settings.collection.products.size > 0
+    assign use_live = true
   endif
 -%}
 
@@ -15,9 +11,14 @@
       <div class="hyuga-section__head">
         <h2>{{ section.settings.heading }}</h2>
         {%- if section.settings.button_label != blank -%}
-          <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+          {% if section.settings.button_link != blank %}
+            <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+          {% else %}
+            <span>{{ section.settings.button_label }}</span>
+          {% endif %}
         {%- endif -%}
       </div>
+
       <div class="hyuga-rail">
         {%- if use_live -%}
           {%- for product in section.settings.collection.products limit: section.settings.limit -%}
@@ -71,28 +72,14 @@
 {
   "name": "Hyuga products",
   "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Bestsellers"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "View all"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button link"
-    },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Bestsellers" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "View all" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
     {
       "type": "collection",
       "id": "collection",
       "label": "Collection",
-      "info": "If empty or has no products, dummy products from blocks are shown"
+      "info": "If empty, dummy products from blocks are shown"
     },
     {
       "type": "range",
@@ -109,58 +96,17 @@
       "type": "product",
       "name": "Dummy product",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "image_url",
-          "label": "Image URL fallback"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "Whey protein 1kg"
-        },
-        {
-          "type": "text",
-          "id": "price",
-          "label": "Price",
-          "default": "3,499"
-        },
-        {
-          "type": "text",
-          "id": "compare",
-          "label": "Compare at price",
-          "default": "4,999"
-        },
-        {
-          "type": "text",
-          "id": "off",
-          "label": "Discount %",
-          "default": "30"
-        },
-        {
-          "type": "text",
-          "id": "rating",
-          "label": "Rating",
-          "default": "4.6"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        }
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "image_url", "label": "Image URL fallback" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Whey protein 1kg" },
+        { "type": "text", "id": "price", "label": "Price", "default": "3,499" },
+        { "type": "text", "id": "compare", "label": "Compare at price", "default": "4,999" },
+        { "type": "text", "id": "off", "label": "Discount %", "default": "30" },
+        { "type": "text", "id": "rating", "label": "Rating", "default": "4.6" },
+        { "type": "url", "id": "link", "label": "Link (optional)" }
       ]
     }
   ],
-  "presets": [
-    {
-      "name": "Hyuga products"
-    }
-  ]
+  "presets": [{ "name": "Hyuga products" }]
 }
 {% endschema %}

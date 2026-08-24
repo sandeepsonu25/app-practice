@@ -1,50 +1,77 @@
-{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign logo_src = 'hyuga-logo-white.svg' | asset_url
+  if section.settings.logo_url != blank
+    assign logo_src = section.settings.logo_url
+  endif
+  if section.settings.logo != blank
+    assign logo_src = section.settings.logo | image_url: width: 280
+  endif
+-%}
 
 <footer class="hyuga-app hyuga-footer">
   <div class="hyuga-wrap hyuga-footer__grid">
     <div>
-      <img src="https://hyugalife.com/assets/images/hyugalife_logo_white.svg" alt="HyugaLife" width="140" height="36" style="height:36px;width:auto;margin-bottom:12px;">
-      <p>India's largest protein and supplement store. 100% genuine products sourced from 300+ brands.</p>
+      <img src="{{ logo_src }}" alt="{{ shop.name | escape }}" width="140" height="36" style="height:36px;width:auto;margin-bottom:12px;">
+      <p>{{ section.settings.about }}</p>
     </div>
-    <div>
-      <h3>Shop</h3>
-      <ul>
-        <li>Whey Protein</li>
-        <li>Creatine</li>
-        <li>Multivitamins</li>
-        <li>Omega 3</li>
-        <li>Collagen</li>
-        <li>Healthy Snacks</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Categories</h3>
-      <ul>
-        <li>Sports Nutrition</li>
-        <li>Health Supplements</li>
-        <li>Health Foods & Beverages</li>
-        <li>Hair, Skin & Nails</li>
-        <li>Women's Health</li>
-        <li>Ayurvedic & Herbal</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Support</h3>
-      <ul>
-        <li>Chat with Expert</li>
-        <li>Authenticity guarantee</li>
-        <li>Easy returns</li>
-        <li>Free shipping</li>
-        <li>Call 1800 267 1155</li>
-      </ul>
-    </div>
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }}>
+        <h3>{{ block.settings.heading }}</h3>
+        {%- if block.settings.menu != blank -%}
+          <ul>
+            {%- for link in block.settings.menu.links -%}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        {%- else -%}
+          <div class="hyuga-footer__rich">{{ block.settings.links }}</div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
   </div>
-  <div class="hyuga-wrap hyuga-footer__copy">© 2026 HyugaLife. All rights reserved.</div>
+  <div class="hyuga-wrap hyuga-footer__copy">{{ section.settings.copyright }}</div>
 </footer>
 
 {% schema %}
 {
   "name": "Hyuga footer",
-  "settings": []
+  "settings": [
+    { "type": "image_picker", "id": "logo", "label": "Footer logo" },
+    {
+      "type": "text",
+      "id": "logo_url",
+      "label": "Logo URL fallback",
+      "info": "Leave blank to use the theme white logo asset"
+    },
+    {
+      "type": "textarea",
+      "id": "about",
+      "label": "About text",
+      "default": "India's largest protein and supplement store. 100% genuine products sourced from 300+ brands."
+    },
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyright",
+      "default": "© 2026 HyugaLife. All rights reserved."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Shop" },
+        { "type": "link_list", "id": "menu", "label": "Menu (optional)" },
+        {
+          "type": "richtext",
+          "id": "links",
+          "label": "Links or text",
+          "default": "<p>Whey Protein<br/>Creatine<br/>Multivitamins</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4
 }
 {% endschema %}

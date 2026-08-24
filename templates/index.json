@@ -1,9 +1,1186 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hyuga-home": {
-      "type": "hyuga-home",
+    "bubbles": {
+      "type": "hyuga-bubbles",
+      "blocks": {
+        "b1": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Offer_Zone_00_1.png",
+            "label": "Offer Zone",
+            "link": ""
+          }
+        },
+        "b2": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Whey_protein_01_1.png",
+            "label": "Whey Protein",
+            "link": ""
+          }
+        },
+        "b3": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Hyuga_one-1_2x_2.png",
+            "label": "Hyuga One",
+            "link": ""
+          }
+        },
+        "b4": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/omega_3_12_1.png",
+            "label": "Omega 3",
+            "link": ""
+          }
+        },
+        "b5": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/creatine_05_1.png",
+            "label": "Creatine",
+            "link": ""
+          }
+        },
+        "b6": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Multivitamin_14_1.png",
+            "label": "Multivitamin",
+            "link": ""
+          }
+        },
+        "b7": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/collagen_08_1.png",
+            "label": "Collagen",
+            "link": ""
+          }
+        },
+        "b8": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Biotin_09_1.png",
+            "label": "Biotin",
+            "link": ""
+          }
+        },
+        "b9": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Health_Suplements_10_1.png",
+            "label": "Supplements",
+            "link": ""
+          }
+        },
+        "b10": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Sports_Nutition_11_1.png",
+            "label": "Sports Nutrition",
+            "link": ""
+          }
+        },
+        "b11": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Health_Foods_Beverages_13_1.png",
+            "label": "Health Foods",
+            "link": ""
+          }
+        },
+        "b12": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Hair_Skin_Nails_15.png",
+            "label": "Hair Skin Nails",
+            "link": ""
+          }
+        },
+        "b13": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Vegan_Plant_Based_03_1.png",
+            "label": "Weight Mgmt",
+            "link": ""
+          }
+        },
+        "b14": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Women_s_Health_17_1.png",
+            "label": "Women Health",
+            "link": ""
+          }
+        },
+        "b15": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Ayurvedic_Herbal_Supplement_18_1.png",
+            "label": "Ayurvedic",
+            "link": ""
+          }
+        },
+        "b16": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Fitness_Gears_Accessories_2x_3.png",
+            "label": "Fitness Gears",
+            "link": ""
+          }
+        },
+        "b17": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Yeast_Protein_2x.png",
+            "label": "Yeast Protein",
+            "link": ""
+          }
+        },
+        "b18": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Sexual_Health_For_Him_22_1.png",
+            "label": "Sexual Health",
+            "link": ""
+          }
+        },
+        "b19": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Healthy_Flours_Oils_06_1.png",
+            "label": "Healthy Flours",
+            "link": ""
+          }
+        },
+        "b20": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Plant_Protein_2x.png",
+            "label": "Plant Protein",
+            "link": ""
+          }
+        },
+        "b21": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Snack_bars_04_1.png",
+            "label": "Snack Bars",
+            "link": ""
+          }
+        },
+        "b22": {
+          "type": "bubble",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Healthy_snacks_07.png",
+            "label": "Snack Bars",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21",
+        "b22"
+      ],
+      "disabled": true,
       "settings": {}
+    },
+    "hero": {
+      "type": "hyuga-hero",
+      "blocks": {
+        "s1": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar-1440x360_2x_11.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar540x270_2x_4.png",
+            "alt": "Home Page Sale banner 3",
+            "link": ""
+          }
+        },
+        "s2": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BIO-D-WEBBIO_1__2.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BIO-M-WEBBIO_1__2.png",
+            "alt": "Home Page Banner 1",
+            "link": ""
+          }
+        },
+        "s3": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/TWT_Web_1__3.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/TWT_Mweb_1__3.jpg",
+            "alt": "Home Page Banner 3",
+            "link": ""
+          }
+        },
+        "s4": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/Web_Banner_2_30.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/Mweb_Banner_28.png",
+            "alt": "Home Page Banner 4",
+            "link": ""
+          }
+        },
+        "s5": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/1440px_x_360px_3x_21.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/540px_x_270px_3x_21.jpg",
+            "alt": "Home Page Banner 5",
+            "link": ""
+          }
+        },
+        "s6": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/All_products.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/All_products-MView.png",
+            "alt": "Home Page Banner 6",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "settings": {}
+    },
+    "promo": {
+      "type": "hyuga-promo",
+      "blocks": {
+        "quick": {
+          "type": "banner",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/assets/images/stack/hyugaquick-banner-dweb.png",
+            "alt": "Hyuga Quick Store",
+            "link": ""
+          }
+        },
+        "quiz": {
+          "type": "banner",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/assets/images/stack/stackquiz-banner-dweb.png",
+            "alt": "Build your personalized supplement stack",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "quick",
+        "quiz"
+      ],
+      "settings": {
+        "mobile_url": "https://cdn.hyugalife.com/assets/images/stack/stackquiz-cta-mweb.png",
+        "mobile_alt": "Build your personalized supplement stack",
+        "mobile_link": ""
+      }
+    },
+    "offers": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "item_gyDgjK": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEBcoupan_4.png",
+            "title": "DHAMAKA5",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "item_akVjiQ": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_Fc8hBf": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_BjeyL3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "item_gyDgjK",
+        "i2",
+        "i3",
+        "item_akVjiQ",
+        "i4",
+        "item_Fc8hBf",
+        "item_BjeyL3"
+      ],
+      "settings": {
+        "heading": "Health to Start With",
+        "button_label": "",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "category"
+      }
+    },
+    "hyuga_image_row_XA6zGd": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "item_nBPJPC": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "item_egLNiM": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1_copy_7sitewide.png",
+            "title": "DHAMAKA8",
+            "link": "#"
+          }
+        },
+        "item_LkpPaz": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEBcoupan_4.png",
+            "title": "DHAMAKA5",
+            "link": ""
+          }
+        },
+        "item_8L3r9Q": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "item_KdRCat": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
+            "title": "Flat ₹50 Off",
+            "link": ""
+          }
+        },
+        "item_7X7VXz": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_KzEeA4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        },
+        "item_pBRNGy": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copy_10BIO_1_4.png",
+            "title": "Buy 1 Get 1 Free Offer",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_nBPJPC",
+        "item_egLNiM",
+        "item_LkpPaz",
+        "item_8L3r9Q",
+        "item_KdRCat",
+        "item_7X7VXz",
+        "item_KzEeA4",
+        "item_pBRNGy"
+      ],
+      "settings": {
+        "heading": "Stronger Days Start Here",
+        "button_label": "",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "category"
+      }
+    },
+    "products": {
+      "type": "hyuga-products",
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_cocoa_chocolate-_front_1.png",
+            "title": "Avvatar Alpha Whey Belgian Chocolate 1kg",
+            "price": "3,499",
+            "compare": "4,999",
+            "off": "30",
+            "rating": "4.7",
+            "link": ""
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsnb33w4.png",
+            "title": "MuscleBlaze Biozyme Performance Whey 1kg",
+            "price": "2,669",
+            "compare": "3,499",
+            "off": "24",
+            "rating": "4.5",
+            "link": ""
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsgp48s8.png",
+            "title": "MuscleTech Nitro-Tech Whey Protein 2lbs",
+            "price": "3,883",
+            "compare": "5,299",
+            "off": "27",
+            "rating": "4.6",
+            "link": ""
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo5.png",
+            "title": "ON Gold Standard 100% Whey 2lbs",
+            "price": "4,722",
+            "compare": "6,199",
+            "off": "24",
+            "rating": "4.8",
+            "link": ""
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo6.png",
+            "title": "GNC Pro Performance Power Protein 2lbs",
+            "price": "3,749",
+            "compare": "4,999",
+            "off": "25",
+            "rating": "4.4",
+            "link": ""
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_kesar_kulfi-_front.png",
+            "title": "Avvatar Performance Whey Malai Kulfi 1kg",
+            "price": "3,499",
+            "compare": "4,799",
+            "off": "27",
+            "rating": "4.6",
+            "link": ""
+          }
+        },
+        "p7": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hscw46n7_1.png",
+            "title": "MuscleBlaze Fish Oil Gold 60 Capsules",
+            "price": "699",
+            "compare": "999",
+            "off": "30",
+            "rating": "4.5",
+            "link": ""
+          }
+        },
+        "p8": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsrj29a4.png",
+            "title": "Creatine Monohydrate Unflavoured 250g",
+            "price": "749",
+            "compare": "1,199",
+            "off": "38",
+            "rating": "4.7",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8"
+      ],
+      "settings": {
+        "heading": "Bestsellers",
+        "button_label": "View all",
+        "button_link": "",
+        "collection": "",
+        "limit": 8
+      }
+    },
+    "focus": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Glutathione_16_3.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Magnesium_2.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Collagen_50_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/ACV-2.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "heading": "Purpose-Built Supplements",
+        "button_label": "",
+        "button_link": "",
+        "layout": "hyuga-focus",
+        "card_style": "offer"
+      }
+    },
+    "fitness": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Whey_protein-web-441x441_copy_2x.jpg",
+            "title": "Whey Protein",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Clean_whey-web-441x441_2x.jpg",
+            "title": "Clean Whey",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Hyugaone_Yeast-web-441x441_copy_4_2x.png",
+            "title": "Yeast Protein",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Creatine-web-441x441_copy_2_2x.jpg",
+            "title": "Creatine",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Protein_bars-web-441x441_copy_3_2x.jpg",
+            "title": "Protein Bars",
+            "link": ""
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Pre-workout-web-441x441_copy_2x.jpg",
+            "title": "Preworkout",
+            "link": ""
+          }
+        },
+        "i7": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Peanut_butter-web-441x441_copy_2x_3.png",
+            "title": "Peanut Butter",
+            "link": ""
+          }
+        },
+        "i8": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Shilajit-web-441x441_copy_3_2x.jpg",
+            "title": "Shilajit",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8"
+      ],
+      "settings": {
+        "heading": "Stronger Days Start Here",
+        "button_label": "View all",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "category"
+      }
+    },
+    "health": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Multivitamins-web-441x441_2x.jpg",
+            "title": "Multivitamins",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Omega-3-web-441x441_copy_2x.jpg",
+            "title": "Omega 3",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Probiotics-web-441x441_copy_2x_1.jpg",
+            "title": "Probiotics",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Collagen-web-441x441_copy_2_2x.jpg",
+            "title": "Collagen",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Oats-web-441x441_copy_3_2x.jpg",
+            "title": "Oats",
+            "link": ""
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Museli-web-441x441_copy_2x.jpg",
+            "title": "Muesli",
+            "link": ""
+          }
+        },
+        "i7": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Dry_fruits-web-441x441_copy_2_2x.jpg",
+            "title": "Dry Fruits",
+            "link": ""
+          }
+        },
+        "i8": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Acv-web-441x441_copy_3_2x.jpg",
+            "title": "ACV",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8"
+      ],
+      "settings": {
+        "heading": "Health to Start With",
+        "button_label": "View all",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "category"
+      }
+    },
+    "brands": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-3_2x.png",
+            "title": "Upto 40% Off",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-2_2x.png",
+            "title": "Upto 50% Off",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-3_1_2x.png",
+            "title": "Upto 45% Off",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-4_2x.png",
+            "title": "Upto 30% Off",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-7_2x.png",
+            "title": "Upto 55% Off",
+            "link": ""
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-6_2x.png",
+            "title": "Upto 25% Off",
+            "link": ""
+          }
+        },
+        "i7": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-7_1_2x.png",
+            "title": "Upto 45% Off",
+            "link": ""
+          }
+        },
+        "i8": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-8_1_2x.png",
+            "title": "Upto 10% Off",
+            "link": ""
+          }
+        },
+        "i9": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-BIF-9_1_2x.png",
+            "title": "Upto 40% Off",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8",
+        "i9"
+      ],
+      "settings": {
+        "heading": "Star Brands of the Season",
+        "button_label": "",
+        "button_link": "",
+        "layout": "hyuga-brand-grid",
+        "card_style": "offer"
+      }
+    },
+    "pantry": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_5.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_4_8_4.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_3_8_6.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/1560x2040-weight_management_5.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_6_1_4.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ],
+      "settings": {
+        "heading": "Health Goals Made Simple",
+        "button_label": "",
+        "button_link": "",
+        "layout": "hyuga-pantry-grid",
+        "card_style": "offer"
+      }
+    },
+    "protein": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_1proteins-ss.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_2proteins-ss.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_5proteins-ss.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_3proteins-ss_2.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_4proteins-ss_2.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_6proteins-ss.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i7": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Artboard_7proteins-ss.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7"
+      ],
+      "settings": {
+        "heading": "Protein Tailored for Every You",
+        "button_label": "",
+        "button_link": "",
+        "layout": "hyuga-protein-grid",
+        "card_style": "offer"
+      }
+    },
+    "stack": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/fitness_focus_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/omega_3_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/smart_snack_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/new_to_protein_1.5x_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/gas_issue_1.5x_3.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ],
+      "settings": {
+        "heading": "Your Body Needs More Than Just Vitamins",
+        "button_label": "",
+        "button_link": "",
+        "layout": "rail",
+        "card_style": "offer"
+      }
+    },
+    "deals": {
+      "type": "hyuga-image-row",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-ABD-1_2x.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-ABD-2_2x.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-ABD-3_2x.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/24th_Aug-ABD-4_2x.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "heading": "Ahhhh-mazing Deals",
+        "button_label": "",
+        "button_link": "",
+        "layout": "hyuga-deal-grid",
+        "card_style": "offer"
+      }
     }
   },
-  "order": ["hyuga-home"]
+  "order": [
+    "bubbles",
+    "hero",
+    "promo",
+    "offers",
+    "hyuga_image_row_XA6zGd",
+    "products",
+    "focus",
+    "fitness",
+    "health",
+    "brands",
+    "pantry",
+    "protein",
+    "stack",
+    "deals"
+  ]
 }

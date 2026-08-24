@@ -1,102 +1,92 @@
-{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'hyuga-home.js' | asset_url }}" defer></script>
+{%- liquid
+  assign logo_src = 'hyuga-logo.svg' | asset_url
+  if section.settings.logo_url != blank
+    assign logo_src = section.settings.logo_url
+  endif
+  if section.settings.logo != blank
+    assign logo_src = section.settings.logo | image_url: width: 280
+  endif
+-%}
 
 <div class="hyuga-app">
-  <div class="hyuga-topbar">
-    <div class="hyuga-wrap hyuga-topbar__inner">
-      <span>Chat with Expert for free nutrition advice</span>
-    </div>
-  </div>
-
   <header class="hyuga-header">
     <div class="hyuga-wrap hyuga-header__row">
       <button class="hyuga-burger" type="button" data-hyuga-burger aria-label="Open menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1A5E" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
+
       <a class="hyuga-logo" href="{{ routes.root_url }}">
-        <img src="https://hyugalife.com/assets/images/h-logo.svg" alt="HyugaLife" width="140" height="36">
+        <img src="{{ logo_src }}" alt="{{ shop.name | escape }}" width="140" height="36">
       </a>
-      <form class="hyuga-search" action="{{ routes.search_url }}" method="get" onsubmit="return false;">
-        <input type="search" placeholder="Search for brands" aria-label="Search for brands">
-        <button type="button" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3-3"></path></svg>
-        </button>
+
+      {%- comment -%} Delivery chip — editable text, no link required {%- endcomment -%}
+      <button class="hyuga-delivery" type="button" aria-label="Change delivery location">
+        <span class="hyuga-delivery__bolt" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 10-14h-7l1-6z" fill="#5B5FC7"/></svg>
+        </span>
+        <span class="hyuga-delivery__text">
+          <em>{{ section.settings.delivery_eta | escape }}</em>
+          <b>{{ section.settings.delivery_place | escape }} <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg></b>
+        </span>
+      </button>
+
+      {%- comment -%} Hardcoded top links (no Shopify menus yet) {%- endcomment -%}
+      <nav class="hyuga-topnav" aria-label="Quick links">
+        <span class="hyuga-topnav__item">
+          Brands
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+        <span class="hyuga-topnav__item">
+          Benefits
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+        </span>
+        <span class="hyuga-offers">{{ section.settings.offers_label | escape }}</span>
+      </nav>
+
+      <form class="hyuga-search" action="{{ routes.search_url }}" method="get" role="search">
+        <input type="hidden" name="type" value="product">
+        <span class="hyuga-search__icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A5E" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3-3"></path></svg>
+        </span>
+        <input
+          type="search"
+          name="q"
+          placeholder="{{ section.settings.search_placeholder | escape }}"
+          value="{{ search.terms | escape }}"
+          aria-label="{{ section.settings.search_placeholder | escape }}"
+        >
       </form>
+
       <div class="hyuga-header__actions">
-        <button class="hyuga-pin" type="button">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
-          <span><small>Deliver to</small><b>110001</b></span>
-        </button>
-        <button class="hyuga-icon-btn" type="button">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
-          <span class="hyuga-login-label">Login</span>
-        </button>
-        <button class="hyuga-icon-btn hyuga-cart" type="button">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"></path><path d="M6 6L5 3H2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="18" cy="20" r="1.4"></circle></svg>
-          <span class="hyuga-cart__count">0</span>
-        </button>
+        <a class="hyuga-login" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+          <span class="hyuga-login__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A5E" stroke-width="1.8"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 19c1.2-3.5 3.8-5 7-5s5.8 1.5 7 5"></path></svg>
+          </span>
+          <span class="hyuga-login__label">{% if customer %}Account{% else %}{{ section.settings.login_label }}{% endif %}</span>
+          <svg class="hyuga-login__chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+        </a>
+
+        <a class="hyuga-cart" href="{{ routes.cart_url }}" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1A5E" stroke-width="1.8"><path d="M7 7h14l-1.4 8.2a1.5 1.5 0 0 1-1.5 1.3H9.2a1.5 1.5 0 0 1-1.5-1.3L6.2 4.5H3"></path><circle cx="10" cy="20" r="1.3"></circle><circle cx="17" cy="20" r="1.3"></circle></svg>
+          {%- if cart.item_count > 0 -%}
+            <span class="hyuga-cart__count">{{ cart.item_count }}</span>
+          {%- endif -%}
+        </a>
       </div>
     </div>
 
-    <nav class="hyuga-nav" aria-label="Main">
+    {%- comment -%} Hardcoded category row — matches live site labels, no links yet {%- endcomment -%}
+    <nav class="hyuga-nav" aria-label="Main categories">
       <div class="hyuga-wrap hyuga-nav__row">
-        <div class="hyuga-mega">
-          <button class="hyuga-mega__btn" type="button">Shop by Category</button>
-          <div class="hyuga-mega__panel">
-            <div>
-              <p>Sports Nutrition</p>
-              <span>Whey Protein</span>
-              <span>Mass Gainer</span>
-              <span>Creatine</span>
-              <span>Pre-Workout</span>
-              <span>BCAA & EAA</span>
-              <span>Plant Protein</span>
-              <span>Yeast Protein</span>
-            </div>
-            <div>
-              <p>Health Supplements</p>
-              <span>Multivitamins</span>
-              <span>Omega 3</span>
-              <span>Probiotics</span>
-              <span>Calcium & Vitamin D</span>
-              <span>Magnesium</span>
-              <span>Fish Oil</span>
-            </div>
-            <div>
-              <p>Hair, Skin & Nails</p>
-              <span>Collagen</span>
-              <span>Biotin</span>
-              <span>Glutathione</span>
-              <span>Hair Gummies</span>
-            </div>
-            <div>
-              <p>Health Foods</p>
-              <span>Peanut Butter</span>
-              <span>Oats & Muesli</span>
-              <span>Snack Bars</span>
-              <span>Dry Fruits</span>
-              <span>Healthy Flours & Oils</span>
-            </div>
-            <div>
-              <p>More</p>
-              <span>Weight Management</span>
-              <span>Women's Health</span>
-              <span>Ayurvedic & Herbal</span>
-              <span>Sexual Health</span>
-              <span>Fitness Gears</span>
-              <span>Offer Zone</span>
-            </div>
-          </div>
-        </div>
         <span class="hyuga-nav__link">Health Supplements</span>
         <span class="hyuga-nav__link">Sports Nutrition</span>
-        <span class="hyuga-nav__link">Health Foods & Beverages</span>
-        <span class="hyuga-nav__link">Hair, Skin & Nails</span>
+        <span class="hyuga-nav__link">Health Foods &amp; Beverages</span>
+        <span class="hyuga-nav__link">Hair, Skin &amp; Nails</span>
         <span class="hyuga-nav__link">Weight Management</span>
         <span class="hyuga-nav__link">Women's Health</span>
-        <span class="hyuga-nav__link">Ayurvedic & Herbal</span>
+        <span class="hyuga-nav__link">Ayurvedic &amp; Herbal Supplements</span>
         <span class="hyuga-nav__link">Sexual Health</span>
-        <span class="hyuga-nav__link">Fitness Gears</span>
+        <span class="hyuga-nav__link">Fitness Gears &amp; Accessories</span>
       </div>
     </nav>
   </header>
@@ -108,15 +98,16 @@
       <p class="hyuga-drawer__title">Shop by Category</p>
       <span>Health Supplements</span>
       <span>Sports Nutrition</span>
-      <span>Health Foods & Beverages</span>
-      <span>Hair, Skin & Nails</span>
+      <span>Health Foods &amp; Beverages</span>
+      <span>Hair, Skin &amp; Nails</span>
       <span>Weight Management</span>
       <span>Women's Health</span>
-      <span>Ayurvedic & Herbal Supplements</span>
+      <span>Ayurvedic &amp; Herbal Supplements</span>
       <span>Sexual Health</span>
-      <span>Fitness Gears & Accessories</span>
-      <span>Offer Zone</span>
-      <span>Hyuga One</span>
+      <span>Fitness Gears &amp; Accessories</span>
+      <span>Brands</span>
+      <span>Benefits</span>
+      <span>{{ section.settings.offers_label | escape }}</span>
     </div>
   </div>
 </div>
@@ -124,6 +115,44 @@
 {% schema %}
 {
   "name": "Hyuga header",
-  "settings": []
+  "settings": [
+    { "type": "image_picker", "id": "logo", "label": "Logo" },
+    {
+      "type": "text",
+      "id": "logo_url",
+      "label": "Logo URL fallback",
+      "info": "Leave blank to use the theme logo asset"
+    },
+    {
+      "type": "text",
+      "id": "delivery_eta",
+      "label": "Delivery ETA text",
+      "default": "Get it by 11 AM, Tomorrow*"
+    },
+    {
+      "type": "text",
+      "id": "delivery_place",
+      "label": "Delivery place",
+      "default": "110001, New Delhi"
+    },
+    {
+      "type": "text",
+      "id": "offers_label",
+      "label": "Offers badge text",
+      "default": "OFFERS"
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "Search placeholder",
+      "default": "Search for Proteins, Vitamins, Brands..."
+    },
+    {
+      "type": "text",
+      "id": "login_label",
+      "label": "Login label",
+      "default": "Login"
+    }
+  ]
 }
 {% endschema %}

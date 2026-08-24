@@ -1,17 +1,43 @@
+/* HyugaLife homepage clone — theme customizer sections */
+
+body.hyuga-store {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  background: #fff;
+  color: #111827;
+}
+
+body.hyuga-store .content-for-layout {
+  margin: 0;
+  background: #fff;
+  min-height: 40vh;
+}
+
+body.hyuga-store .shopify-section-group-header-group,
+body.hyuga-store .shopify-section-group-footer-group {
+  margin: 0;
+}
+
+body.hyuga-store .shopify-section > .hyuga-app,
+body.hyuga-store .shopify-section > .hyuga-announcement {
+  margin: 0;
+}
+
+body.hyuga-store #MainContent .shopify-section {
+  margin: 0;
+  padding: 0;
+}
+
 .hyuga-app {
   --h-purple: #262261;
   --h-purple-2: #4b4898;
-  --h-purple-3: #5f5cac;
-  --h-purple-soft: #f0eeff;
-  --h-text: #111827;
   --h-muted: #6b7280;
   --h-border: #e5e7eb;
   --h-max: 1280px;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0;
-  color: var(--h-text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #111827;
   background: #fff;
 }
 
@@ -32,125 +58,47 @@
 
 @media (min-width: 640px) {
   .hyuga-wrap {
-    width: min(var(--h-max), calc(100% - 64px));
+    width: min(var(--h-max), calc(100% - 48px));
   }
 }
 
+/* Announcement — matches live sale strip */
+.hyuga-announcement {
+  background: #1a1a5e;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 9px 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.hyuga-announcement__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hyuga-announcement__text {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header — screenshot layout */
 .hyuga-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 60;
   background: #fff;
-  border-bottom: 1px solid #f3f4f6;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 0 #ececf2;
 }
 
 .hyuga-header__row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-height: 64px;
-  padding: 10px 0;
-}
-
-.hyuga-logo {
-  flex: 0 0 auto;
-  width: 118px;
-}
-
-.hyuga-logo img {
-  height: 36px;
-  width: auto;
-}
-
-.hyuga-search {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  background: #f3f4f6;
-  border-radius: 999px;
-  overflow: hidden;
-  min-width: 0;
-}
-
-.hyuga-search input {
-  flex: 1;
-  border: 0;
-  background: transparent;
-  padding: 10px 16px;
-  font-size: 14px;
-  outline: none;
-  min-width: 0;
-  color: var(--h-text);
-}
-
-.hyuga-search button {
-  border: 0;
-  background: var(--h-purple);
-  color: #fff;
-  width: 44px;
-  height: 40px;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-}
-
-.hyuga-header__actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex: 0 0 auto;
-}
-
-.hyuga-pin,
-.hyuga-icon-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 12px;
-  color: var(--h-text);
-  font-family: inherit;
-}
-
-.hyuga-pin span {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-  text-align: left;
-}
-
-.hyuga-pin small {
-  color: var(--h-muted);
-  font-size: 11px;
-}
-
-.hyuga-pin b {
-  font-size: 12px;
-  color: var(--h-purple);
-}
-
-.hyuga-cart {
-  position: relative;
-}
-
-.hyuga-cart__count {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  background: var(--h-purple);
-  color: #fff;
-  border-radius: 99px;
-  min-width: 16px;
-  height: 16px;
-  font-size: 10px;
-  display: grid;
-  place-items: center;
-  padding: 0 4px;
+  gap: 14px;
+  min-height: 72px;
+  padding: 12px 0;
 }
 
 .hyuga-burger {
@@ -160,8 +108,232 @@
   border: 0;
   background: transparent;
   cursor: pointer;
+  place-items: center;
+  flex: 0 0 auto;
 }
 
+.hyuga-logo {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.hyuga-logo img {
+  height: 28px;
+  width: auto;
+  max-width: 140px;
+}
+
+/* Delivery chip */
+.hyuga-delivery {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  max-width: 168px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: #eeedf8;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.hyuga-delivery__bolt {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-delivery__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.hyuga-delivery__text em {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  color: #5b5fc7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hyuga-delivery__text b {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a5e;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+/* Brands / Benefits / OFFERS */
+.hyuga-topnav {
+  display: none;
+  align-items: center;
+  gap: 14px;
+  flex: 0 0 auto;
+}
+
+.hyuga-topnav__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a5e;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.hyuga-offers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: linear-gradient(135deg, #ff7a3d 0%, #ff4d4d 55%, #ff3b5c 100%);
+  border-radius: 40% 60% 45% 55% / 55% 40% 60% 45%;
+  box-shadow: 0 2px 8px rgba(255, 77, 77, 0.35);
+  cursor: default;
+  white-space: nowrap;
+  transform: rotate(-2deg);
+}
+
+/* Search — icon on left, pill field */
+.hyuga-search {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  height: 44px;
+  padding: 0 14px;
+  background: #fff;
+  border: 1px solid #d8d8e2;
+  border-radius: 999px;
+}
+
+.hyuga-search__icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-search input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 14px;
+  outline: none;
+  min-width: 0;
+  color: #1a1a5e;
+}
+
+.hyuga-search input::placeholder {
+  color: #9ca3af;
+}
+
+.hyuga-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.hyuga-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1a1a5e;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hyuga-login__icon {
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid #1a1a5e;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-login__chev {
+  opacity: 0.7;
+}
+
+.hyuga-cart {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.hyuga-cart__count {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background: #ff4d4d;
+  color: #fff;
+  border-radius: 99px;
+  min-width: 16px;
+  height: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  padding: 0 4px;
+}
+
+/* Category row — centered, 2-line labels */
+.hyuga-nav {
+  border-top: 1px solid #ececf2;
+  background: #fff;
+}
+
+.hyuga-nav__row {
+  display: none;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 56px;
+  padding: 8px 0 10px;
+}
+
+.hyuga-nav__link {
+  flex: 1 1 0;
+  max-width: 140px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #4b4b6a;
+  cursor: default;
+  white-space: normal;
+}
+
+.hyuga-drawer__panel span {
+  display: block;
+  font-size: 13px;
+  color: #4b5563;
+  padding: 4px 0;
+  cursor: default;
+}
+
+/* Mobile drawer */
 .hyuga-drawer {
   display: none;
   position: fixed;
@@ -190,18 +362,26 @@
   overflow: auto;
 }
 
-.hyuga-drawer__panel a {
-  display: block;
-  padding: 10px 0;
-  border-bottom: 1px solid #f3f4f6;
-  font-size: 14px;
+.hyuga-drawer__title {
+  font-weight: 700;
+  color: #262261;
+  margin: 8px 0 12px;
 }
 
+.hyuga-drawer__close {
+  border: 0;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Category bubbles */
 .hyuga-bubbles {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   overflow-x: auto;
-  padding: 16px 0 8px;
+  padding: 16px 0 10px;
   scrollbar-width: none;
 }
 
@@ -220,13 +400,25 @@
   height: 78px;
   object-fit: cover;
   border-radius: 999px;
+  background: #f6f6f8;
 }
 
+.hyuga-bubble span,
+.hyuga-cat-card span {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #262261;
+  line-height: 1.25;
+}
+
+/* Hero */
 .hyuga-hero {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  margin: 8px 0 20px;
+  margin: 4px 0 18px;
 }
 
 .hyuga-hero__track {
@@ -270,27 +462,36 @@
   width: 18px;
 }
 
+/* Promo pair */
 .hyuga-pair {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto auto;
   gap: 16px;
-  margin: 8px 0 28px;
+  margin: 0 0 24px;
 }
 
-.hyuga-pair img {
+.hyuga-pair img,
+.hyuga-promo-mobile img {
   width: 100%;
   border-radius: 16px;
-  object-fit: cover;
+  height: auto;
 }
 
+.hyuga-promo-mobile {
+  display: block;
+  margin: 0 0 20px;
+}
+
+/* Sections */
 .hyuga-section {
-  margin: 12px 0 32px;
+  margin: 8px 0 28px;
 }
 
 .hyuga-section__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   margin-bottom: 12px;
 }
 
@@ -301,10 +502,12 @@
   color: #111827;
 }
 
-.hyuga-section__head a {
+.hyuga-section__head a,
+.hyuga-section__head span {
   color: var(--h-purple);
   font-size: 13px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .hyuga-rail {
@@ -337,49 +540,54 @@
 }
 
 .hyuga-cat-card img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
+  background: #f6f6f8;
 }
 
-.hyuga-cat-card span {
-  display: block;
-  margin-top: 8px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.hyuga-focus {
+.hyuga-focus,
+.hyuga-brand-grid,
+.hyuga-deal-grid,
+.hyuga-pantry-grid,
+.hyuga-protein-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
 
-.hyuga-focus img,
-.hyuga-brand img,
-.hyuga-deal img,
-.hyuga-pantry img,
-.hyuga-protein img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
+.hyuga-focus {
+  grid-template-columns: 1fr 1fr;
 }
 
 .hyuga-brand-grid,
 .hyuga-deal-grid,
-.hyuga-pantry-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
+.hyuga-pantry-grid,
 .hyuga-protein-grid {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
 }
 
+.hyuga-focus img,
+.hyuga-brand-grid img,
+.hyuga-deal-grid img,
+.hyuga-pantry-grid img,
+.hyuga-protein-grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #f6f6f8;
+}
+
+.hyuga-pantry-grid img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.hyuga-protein-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Product cards */
 .hyuga-card {
   flex: 0 0 168px;
   background: #fff;
@@ -387,6 +595,7 @@
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  position: relative;
 }
 
 .hyuga-card__img {
@@ -401,39 +610,44 @@
 }
 
 .hyuga-card__off {
-  display: inline-block;
-  background: #dcfce7;
-  color: #166534;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #16a34a;
+  color: #fff;
   font-size: 11px;
   font-weight: 700;
-  padding: 2px 6px;
   border-radius: 4px;
-  margin: 6px 0;
+  padding: 2px 6px;
 }
 
 .hyuga-card__title {
   font-size: 13px;
   font-weight: 600;
-  line-height: 1.3;
-  height: 34px;
+  margin: 8px 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
+  min-height: 2.6em;
 }
 
 .hyuga-card__rating {
   font-size: 12px;
   color: #ca8a04;
-  margin: 4px 0;
+  margin-bottom: 4px;
 }
 
 .hyuga-card__price {
   display: flex;
-  gap: 6px;
   align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 8px;
 }
 
 .hyuga-card__price b {
-  color: var(--h-purple);
-  font-size: 15px;
+  color: #111827;
 }
 
 .hyuga-card__price s {
@@ -442,39 +656,42 @@
 }
 
 .hyuga-card__add {
-  width: 100%;
-  margin-top: 8px;
-  border: 0;
+  display: block;
+  text-align: center;
   background: var(--h-purple);
   color: #fff;
   border-radius: 8px;
   padding: 8px;
+  font-size: 13px;
   font-weight: 600;
-  cursor: pointer;
-  font-family: inherit;
 }
 
+/* Footer */
 .hyuga-footer {
-  background: var(--h-purple);
-  color: #fff;
+  background: #262261;
+  color: #e8e7f5;
+  padding: 40px 0 24px;
   margin-top: 24px;
-  padding: 40px 0 20px;
-  font-size: 14px;
-}
-
-.hyuga-footer a {
-  color: #e5e7eb;
 }
 
 .hyuga-footer__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 28px;
 }
 
 .hyuga-footer h3 {
   margin: 0 0 12px;
   font-size: 15px;
+  color: #fff;
+}
+
+.hyuga-footer p,
+.hyuga-footer__rich {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #c7c9e0;
 }
 
 .hyuga-footer ul {
@@ -483,8 +700,11 @@
   padding: 0;
 }
 
-.hyuga-footer li {
+.hyuga-footer li,
+.hyuga-footer__rich p {
   margin: 0 0 8px;
+  font-size: 13px;
+  color: #c7c9e0;
 }
 
 .hyuga-footer__copy {
@@ -495,150 +715,79 @@
   color: #c7c9e0;
 }
 
-.hyuga-mobile-only {
-  display: none;
-}
-
+/* Responsive visibility */
 .hyuga-desktop-only {
-  display: block;
-}
-
-.hyuga-wrap {
-  width: min(var(--h-max), calc(100% - 32px));
-  margin: 0 auto;
-}
-
-.hyuga-bubbles {
   display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  padding: 16px 0 8px;
-  scrollbar-width: none;
 }
 
-.hyuga-bubbles::-webkit-scrollbar {
-  display: none;
+.hyuga-mobile-only {
+  display: none !important;
 }
 
-.hyuga-bubble img {
-  width: 78px;
-  height: 78px;
-  object-fit: cover;
-  border-radius: 999px;
-  flex: 0 0 78px;
-}
+@media (max-width: 989px) {
+  .hyuga-topnav {
+    display: none !important;
+  }
 
-.hyuga-pair {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin: 8px 0 28px;
-}
+  .hyuga-delivery {
+    display: none;
+  }
 
-.hyuga-pair img {
-  width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-}
-
-.hyuga-section__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.hyuga-section__head h2 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.hyuga-section__head a {
-  color: var(--h-purple);
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.hyuga-header__actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.hyuga-drawer__mask {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.hyuga-drawer__panel {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: min(86vw, 320px);
-  background: #fff;
-  padding: 20px;
-  overflow: auto;
-}
-
-.hyuga-hero__dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-}
-
-.hyuga-hero__dots button.is-active {
-  background: var(--h-purple);
-  width: 18px;
+  .hyuga-login__label,
+  .hyuga-login__chev {
+    display: none;
+  }
 }
 
 @media (max-width: 749px) {
   .hyuga-burger {
     display: grid;
-    place-items: center;
-  }
-
-  .hyuga-pin,
-  .hyuga-login-label {
-    display: none;
   }
 
   .hyuga-logo {
     width: 96px;
   }
 
-  .hyuga-hero__slide img {
-    aspect-ratio: 2 / 1;
-  }
-
-  .hyuga-mobile-only {
-    display: block;
-  }
-
-  .hyuga-desktop-only {
-    display: none;
-  }
-
   .hyuga-header__row {
     flex-wrap: wrap;
     min-height: 0;
+    gap: 10px;
   }
 
   .hyuga-search {
     order: 5;
     flex: 1 1 100%;
   }
+
+  .hyuga-announcement {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .hyuga-hero__slide img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .hyuga-desktop-only {
+    display: none !important;
+  }
+
+  .hyuga-mobile-only {
+    display: block !important;
+  }
+
+  .hyuga-offer {
+    flex: 0 0 240px;
+  }
+
+  .hyuga-offer img {
+    height: 128px;
+  }
 }
 
 @media (min-width: 750px) {
   .hyuga-section__head h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .hyuga-pair {
@@ -653,259 +802,53 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .hyuga-pair {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.hyuga-desktop-only { display: block; }
-.hyuga-section__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.hyuga-section__head h2 { margin: 0; font-size: 18px; font-weight: 700; }
-.hyuga-section__head a { color: var(--h-purple); font-size: 13px; font-weight: 600; }
-.hyuga-pair { display: grid; gap: 16px; margin: 8px 0 28px; }
-.hyuga-pair img { width: 100%; border-radius: 16px; }
-.hyuga-hero__dots { position: absolute; left: 0; right: 0; bottom: 10px; display: flex; justify-content: center; gap: 6px; }
-.hyuga-hero__dots button.is-active { background: var(--h-purple); width: 18px; }
-.hyuga-card__img { height: 132px; display: grid; place-items: center; }
-.hyuga-card__img img { max-height: 124px; object-fit: contain; }
-
-body.hyuga-store {
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 1.5;
-  background: #fff;
-}
-
-body.hyuga-store .content-for-layout {
-  margin: 0;
-  background: #fff;
-  min-height: 50vh;
-}
-
-.hyuga-section-root {
-  background: #fff;
-}
-
-.hyuga-wrap {
-  width: min(var(--h-max), calc(100% - 32px));
-  margin: 0 auto;
-}
-
-.hyuga-bubbles {
-  display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  padding: 16px 0 8px;
-  scrollbar-width: none;
-}
-
-.hyuga-bubbles::-webkit-scrollbar {
-  display: none;
-}
-
-.hyuga-desktop-only {
-  display: block;
-}
-
-.hyuga-mobile-only {
-  display: none;
-}
-
-@media (max-width: 749px) {
-  .hyuga-desktop-only {
-    display: none !important;
+  .hyuga-brand-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .hyuga-mobile-only {
-    display: block !important;
+  .hyuga-deal-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
-}
 
-.hyuga-bubble {
-  flex: 0 0 78px;
-  width: 78px;
-  text-align: center;
-}
+  .hyuga-pantry-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
-.hyuga-rail {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  padding-bottom: 8px;
-  scrollbar-width: none;
-}
+  .hyuga-protein-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.hyuga-rail::-webkit-scrollbar {
-  display: none;
-}
+  .hyuga-protein-grid > :nth-child(5) {
+    grid-column: 2;
+  }
 
-.hyuga-footer__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-.hyuga-footer__copy {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  margin-top: 28px;
-  padding-top: 16px;
-  font-size: 12px;
-  color: #c7c9e0;
-}
-
-@media (min-width: 750px) {
   .hyuga-footer__grid {
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
   }
 
-  .hyuga-pair {
-    grid-template-columns: 1fr 1fr;
+  .hyuga-offer {
+    flex: 0 0 320px;
+  }
+
+  .hyuga-offer img {
+    height: 168px;
   }
 }
 
-body.hyuga-store .skip-to-content-link,
-body.hyuga-store .shopify-section-header-sticky:not(.hyuga-app) {
-  display: none !important;
-}
-
-body.hyuga-store .shopify-section {
-  margin: 0;
-}
-
-.hyuga-topbar {
-  background: #262261;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  padding: 6px 12px;
-}
-
-.hyuga-topbar__inner {
-  display: flex;
-  justify-content: center;
-}
-
-.hyuga-header {
-  position: sticky;
-  top: 0;
-  z-index: 60;
-  background: #fff;
-  box-shadow: 0 1px 8px rgba(38, 34, 97, 0.08);
-}
-
-.hyuga-nav {
-  border-top: 1px solid #f1f1f5;
-  background: #fff;
-}
-
-.hyuga-nav__row {
-  display: none;
-  align-items: center;
-  gap: 18px;
-  min-height: 46px;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.hyuga-nav__link,
-.hyuga-mega__btn {
-  font-size: 13px;
-  font-weight: 600;
-  color: #262261;
-  cursor: default;
-  background: none;
-  border: 0;
-  font-family: inherit;
-  padding: 0;
-}
-
-.hyuga-mega {
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.hyuga-mega__btn {
-  background: #262261;
-  color: #fff;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-.hyuga-mega__panel {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  min-width: 760px;
-  background: #fff;
-  border: 1px solid #eee;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  border-radius: 12px;
-  padding: 20px;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-  z-index: 70;
-}
-
-.hyuga-mega:hover .hyuga-mega__panel,
-.hyuga-mega:focus-within .hyuga-mega__panel {
-  display: grid;
-}
-
-.hyuga-mega__panel p {
-  margin: 0 0 8px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #262261;
-}
-
-.hyuga-mega__panel span,
-.hyuga-drawer__panel span,
-.hyuga-footer li {
-  display: block;
-  font-size: 13px;
-  color: #4b5563;
-  padding: 4px 0;
-  cursor: default;
-}
-
-.hyuga-bubble span,
-.hyuga-cat-card span {
-  display: block;
-  margin-top: 6px;
-  font-size: 11px;
-  font-weight: 600;
-  color: #262261;
-  line-height: 1.2;
-}
-
-.hyuga-drawer__title {
-  font-weight: 700;
-  color: #262261;
-  margin: 8px 0 12px;
-}
-
-.hyuga-drawer__close {
-  border: 0;
-  background: transparent;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.hyuga-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hyuga-footer h3 {
-  margin: 0 0 12px;
-  font-size: 15px;
-}
-
 @media (min-width: 990px) {
+  .hyuga-topnav {
+    display: flex;
+  }
+
   .hyuga-nav__row {
     display: flex;
+  }
+
+  .hyuga-header__row {
+    gap: 16px;
+  }
+
+  .hyuga-wrap {
+    width: min(1400px, calc(100% - 48px));
   }
 }

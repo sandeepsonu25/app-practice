@@ -1,8 +1,4 @@
-{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
-
-{%- liquid
-  assign layout = section.settings.layout
--%}
+{%- assign layout = section.settings.layout -%}
 
 <div class="hyuga-app">
   <div class="hyuga-wrap">
@@ -11,7 +7,11 @@
         <div class="hyuga-section__head">
           <h2>{{ section.settings.heading }}</h2>
           {%- if section.settings.button_label != blank -%}
-            <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+            {% if section.settings.button_link != blank %}
+              <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+            {% else %}
+              <span>{{ section.settings.button_label }}</span>
+            {% endif %}
           {%- endif -%}
         </div>
       {%- endif -%}
@@ -25,16 +25,15 @@
                 assign src = block.settings.image | image_url: width: 800
               endif
             -%}
-            <a
-              class="{% if section.settings.card_style == 'offer' %}hyuga-offer{% elsif section.settings.card_style == 'category' %}hyuga-cat-card{% else %}hyuga-offer{% endif %}"
-              href="{{ block.settings.link }}"
+            <{% if block.settings.link != blank %}a href="{{ block.settings.link }}"{% else %}div{% endif %}
+              class="{% if section.settings.card_style == 'category' %}hyuga-cat-card{% else %}hyuga-offer{% endif %}"
               {{ block.shopify_attributes }}
             >
-              <img src="{{ src }}" alt="{{ block.settings.title | escape }}" width="320" height="220">
+              <img src="{{ src }}" alt="{{ block.settings.title | escape }}" width="320" height="220" loading="lazy">
               {%- if section.settings.card_style == 'category' and block.settings.title != blank -%}
                 <span>{{ block.settings.title }}</span>
               {%- endif -%}
-            </a>
+            </{% if block.settings.link != blank %}a{% else %}div{% endif %}>
           {%- endfor -%}
         </div>
       {%- else -%}
@@ -46,9 +45,9 @@
                 assign src = block.settings.image | image_url: width: 900
               endif
             -%}
-            <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
-              <img src="{{ src }}" alt="{{ block.settings.title | escape }}" width="400" height="400">
-            </a>
+            <{% if block.settings.link != blank %}a href="{{ block.settings.link }}"{% else %}div{% endif %} {{ block.shopify_attributes }}>
+              <img src="{{ src }}" alt="{{ block.settings.title | escape }}" width="400" height="400" loading="lazy">
+            </{% if block.settings.link != blank %}a{% else %}div{% endif %}>
           {%- endfor -%}
         </div>
       {%- endif -%}
@@ -60,22 +59,9 @@
 {
   "name": "Hyuga image row",
   "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Featured"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button link"
-    },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Featured" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
     {
       "type": "select",
       "id": "layout",
@@ -106,33 +92,13 @@
       "type": "item",
       "name": "Image",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "image_url",
-          "label": "Image URL fallback"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        }
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "image_url", "label": "Image URL fallback" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "url", "id": "link", "label": "Link (optional)" }
       ]
     }
   ],
-  "presets": [
-    {
-      "name": "Hyuga image row"
-    }
-  ]
+  "presets": [{ "name": "Hyuga image row" }]
 }
 {% endschema %}

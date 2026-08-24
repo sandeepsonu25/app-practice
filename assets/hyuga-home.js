@@ -8,14 +8,13 @@
     document.querySelectorAll('[data-hyuga-hero]').forEach(function (hero) {
       var track = hero.querySelector('.hyuga-hero__track');
       var slides = hero.querySelectorAll('.hyuga-hero__slide');
-      var dots = hero.querySelectorAll('.hyuga-hero__dots button, .hyuga-hero__dots button');
+      var dots = hero.querySelectorAll('.hyuga-hero__dots button');
       if (!track || !slides.length) return;
       var i = 0;
       function go(n) {
         i = (n + slides.length) % slides.length;
         track.style.transform = 'translateX(' + -i * 100 + '%)';
         dots.forEach(function (d, idx) {
-          d.classList.toggle('is-active', idx === i);
           d.classList.toggle('is-active', idx === i);
         });
       }
@@ -29,18 +28,20 @@
       }, 4500);
     });
 
-    var burger = document.querySelector('[data-hyuga-burger]');
-    var drawer = document.querySelector('[data-hyuga-drawer]');
-    if (burger && drawer) {
-      function close() {
-        drawer.classList.remove('is-open');
-      }
+    document.querySelectorAll('[data-hyuga-burger]').forEach(function (burger) {
+      var drawer = document.querySelector('[data-hyuga-drawer]');
+      if (!drawer) return;
       burger.addEventListener('click', function () {
         drawer.classList.add('is-open');
       });
+    });
+
+    document.querySelectorAll('[data-hyuga-drawer]').forEach(function (drawer) {
       drawer.querySelectorAll('[data-hyuga-close]').forEach(function (el) {
-        el.addEventListener('click', close);
+        el.addEventListener('click', function () {
+          drawer.classList.remove('is-open');
+        });
       });
-    }
+    });
   });
 })();
