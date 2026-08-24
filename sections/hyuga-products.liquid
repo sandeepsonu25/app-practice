@@ -1,0 +1,166 @@
+{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign use_live = false
+  if section.settings.collection != blank
+    if section.settings.collection.products.size > 0
+      assign use_live = true
+    endif
+  endif
+-%}
+
+<div class="hyuga-app">
+  <div class="hyuga-wrap">
+    <section class="hyuga-section">
+      <div class="hyuga-section__head">
+        <h2>{{ section.settings.heading }}</h2>
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+        {%- endif -%}
+      </div>
+      <div class="hyuga-rail">
+        {%- if use_live -%}
+          {%- for product in section.settings.collection.products limit: section.settings.limit -%}
+            {%- liquid
+              assign compare = product.compare_at_price | default: product.price
+              assign off = 0
+              if product.compare_at_price > product.price
+                assign off = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round
+              endif
+              assign card_image = product.featured_image | image_url: width: 400
+              assign card_price = product.price | money_without_currency
+              assign card_compare = compare | money_without_currency
+            -%}
+            {% render 'hyuga-product-card',
+              title: product.title,
+              image: card_image,
+              price: card_price,
+              compare: card_compare,
+              off: off,
+              rating: '4.6',
+              url: product.url
+            %}
+          {%- endfor -%}
+        {%- else -%}
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign src = block.settings.image_url
+              if block.settings.image != blank
+                assign src = block.settings.image | image_url: width: 400
+              endif
+            -%}
+            <div {{ block.shopify_attributes }}>
+              {% render 'hyuga-product-card',
+                title: block.settings.title,
+                image: src,
+                price: block.settings.price,
+                compare: block.settings.compare,
+                off: block.settings.off,
+                rating: block.settings.rating,
+                url: block.settings.link
+              %}
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </section>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Bestsellers"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "View all"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection",
+      "info": "If empty or has no products, dummy products from blocks are shown"
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 8,
+      "label": "Products to show"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Dummy product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_url",
+          "label": "Image URL fallback"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Whey protein 1kg"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "3,499"
+        },
+        {
+          "type": "text",
+          "id": "compare",
+          "label": "Compare at price",
+          "default": "4,999"
+        },
+        {
+          "type": "text",
+          "id": "off",
+          "label": "Discount %",
+          "default": "30"
+        },
+        {
+          "type": "text",
+          "id": "rating",
+          "label": "Rating",
+          "default": "4.6"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hyuga products"
+    }
+  ]
+}
+{% endschema %}

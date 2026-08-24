@@ -1,0 +1,100 @@
+{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
+
+<div class="hyuga-app">
+  <div class="hyuga-wrap">
+    {%- if section.settings.mobile_image != blank or section.settings.mobile_url != blank -%}
+      {%- liquid
+        assign msrc = section.settings.mobile_url
+        if section.settings.mobile_image != blank
+          assign msrc = section.settings.mobile_image | image_url: width: 1000
+        endif
+      -%}
+      <a class="hyuga-mobile-only" href="{{ section.settings.mobile_link }}" style="display:block;margin:0 0 20px;">
+        <img src="{{ msrc }}" alt="{{ section.settings.mobile_alt | escape }}" width="800" height="220" style="width:100%;border-radius:12px;">
+      </a>
+    {%- endif -%}
+
+    <div class="hyuga-pair hyuga-desktop-only">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign src = block.settings.image_url
+          if block.settings.image != blank
+            assign src = block.settings.image | image_url: width: 1200
+          endif
+        -%}
+        <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+          <img src="{{ src }}" alt="{{ block.settings.alt | escape }}" width="800" height="220">
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga promo banners",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Mobile banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "text",
+      "id": "mobile_url",
+      "label": "Mobile image URL fallback",
+      "default": "https://cdn.hyugalife.com/assets/images/stack/stackquiz-cta-mweb.png"
+    },
+    {
+      "type": "text",
+      "id": "mobile_alt",
+      "label": "Mobile alt text",
+      "default": "Build your personalized supplement stack"
+    },
+    {
+      "type": "url",
+      "id": "mobile_link",
+      "label": "Mobile link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Desktop banner",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_url",
+          "label": "Image URL fallback"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt text",
+          "default": "Promo"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hyuga promo banners"
+    }
+  ]
+}
+{% endschema %}

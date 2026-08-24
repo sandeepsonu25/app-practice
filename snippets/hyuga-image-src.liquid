@@ -1,0 +1,5 @@
+{% if image != blank %}
+  {{ image | image_url: width: width }}
+{% else %}
+  {{ fallback }}
+{% endif %}

@@ -1,0 +1,13 @@
+<div class="hyuga-card">
+  <div class="hyuga-card__img">
+    <img src="{{ image }}" alt="{{ title | escape }}" width="180" height="180" loading="lazy">
+  </div>
+  <span class="hyuga-card__off">{{ off }}% Off</span>
+  <div class="hyuga-card__title">{{ title }}</div>
+  <div class="hyuga-card__rating">★ {{ rating }}</div>
+  <div class="hyuga-card__price">
+    <b>₹{{ price }}</b>
+    <s>₹{{ compare }}</s>
+  </div>
+  <span class="hyuga-card__add">Add</span>
+</div>

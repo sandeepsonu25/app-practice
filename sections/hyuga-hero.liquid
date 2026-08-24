@@ -1,0 +1,88 @@
+{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hyuga-home.js' | asset_url }}" defer></script>
+
+<div class="hyuga-app">
+  <div class="hyuga-wrap">
+    <div class="hyuga-hero" data-hyuga-hero>
+      <div class="hyuga-hero__track">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign desktop = block.settings.desktop_url
+            assign mobile = block.settings.mobile_url
+            if block.settings.desktop_image != blank
+              assign desktop = block.settings.desktop_image | image_url: width: 1600
+            endif
+            if block.settings.mobile_image != blank
+              assign mobile = block.settings.mobile_image | image_url: width: 800
+            endif
+            if mobile == blank
+              assign mobile = desktop
+            endif
+          -%}
+          <a class="hyuga-hero__slide" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+            <img class="hyuga-desktop-only" src="{{ desktop }}" alt="{{ block.settings.alt | escape }}" width="1440" height="360">
+            <img class="hyuga-mobile-only" src="{{ mobile }}" alt="{{ block.settings.alt | escape }}" width="540" height="270">
+          </a>
+        {%- endfor -%}
+      </div>
+      {%- if section.blocks.size > 1 -%}
+        <div class="hyuga-hero__dots">
+          {%- for block in section.blocks -%}
+            <button type="button"{% if forloop.first %} class="is-active"{% endif %} aria-label="Slide {{ forloop.index }}"></button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga hero slider",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Desktop image"
+        },
+        {
+          "type": "text",
+          "id": "desktop_url",
+          "label": "Desktop image URL fallback"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image"
+        },
+        {
+          "type": "text",
+          "id": "mobile_url",
+          "label": "Mobile image URL fallback"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt text",
+          "default": "Banner"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hyuga hero slider"
+    }
+  ]
+}
+{% endschema %}

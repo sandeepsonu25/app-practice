@@ -1,0 +1,129 @@
+{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hyuga-home.js' | asset_url }}" defer></script>
+
+<div class="hyuga-app">
+  <div class="hyuga-topbar">
+    <div class="hyuga-wrap hyuga-topbar__inner">
+      <span>Chat with Expert for free nutrition advice</span>
+    </div>
+  </div>
+
+  <header class="hyuga-header">
+    <div class="hyuga-wrap hyuga-header__row">
+      <button class="hyuga-burger" type="button" data-hyuga-burger aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+      <a class="hyuga-logo" href="{{ routes.root_url }}">
+        <img src="https://hyugalife.com/assets/images/h-logo.svg" alt="HyugaLife" width="140" height="36">
+      </a>
+      <form class="hyuga-search" action="{{ routes.search_url }}" method="get" onsubmit="return false;">
+        <input type="search" placeholder="Search for brands" aria-label="Search for brands">
+        <button type="button" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3-3"></path></svg>
+        </button>
+      </form>
+      <div class="hyuga-header__actions">
+        <button class="hyuga-pin" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+          <span><small>Deliver to</small><b>110001</b></span>
+        </button>
+        <button class="hyuga-icon-btn" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>
+          <span class="hyuga-login-label">Login</span>
+        </button>
+        <button class="hyuga-icon-btn hyuga-cart" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#262261" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"></path><path d="M6 6L5 3H2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="18" cy="20" r="1.4"></circle></svg>
+          <span class="hyuga-cart__count">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="hyuga-nav" aria-label="Main">
+      <div class="hyuga-wrap hyuga-nav__row">
+        <div class="hyuga-mega">
+          <button class="hyuga-mega__btn" type="button">Shop by Category</button>
+          <div class="hyuga-mega__panel">
+            <div>
+              <p>Sports Nutrition</p>
+              <span>Whey Protein</span>
+              <span>Mass Gainer</span>
+              <span>Creatine</span>
+              <span>Pre-Workout</span>
+              <span>BCAA & EAA</span>
+              <span>Plant Protein</span>
+              <span>Yeast Protein</span>
+            </div>
+            <div>
+              <p>Health Supplements</p>
+              <span>Multivitamins</span>
+              <span>Omega 3</span>
+              <span>Probiotics</span>
+              <span>Calcium & Vitamin D</span>
+              <span>Magnesium</span>
+              <span>Fish Oil</span>
+            </div>
+            <div>
+              <p>Hair, Skin & Nails</p>
+              <span>Collagen</span>
+              <span>Biotin</span>
+              <span>Glutathione</span>
+              <span>Hair Gummies</span>
+            </div>
+            <div>
+              <p>Health Foods</p>
+              <span>Peanut Butter</span>
+              <span>Oats & Muesli</span>
+              <span>Snack Bars</span>
+              <span>Dry Fruits</span>
+              <span>Healthy Flours & Oils</span>
+            </div>
+            <div>
+              <p>More</p>
+              <span>Weight Management</span>
+              <span>Women's Health</span>
+              <span>Ayurvedic & Herbal</span>
+              <span>Sexual Health</span>
+              <span>Fitness Gears</span>
+              <span>Offer Zone</span>
+            </div>
+          </div>
+        </div>
+        <span class="hyuga-nav__link">Health Supplements</span>
+        <span class="hyuga-nav__link">Sports Nutrition</span>
+        <span class="hyuga-nav__link">Health Foods & Beverages</span>
+        <span class="hyuga-nav__link">Hair, Skin & Nails</span>
+        <span class="hyuga-nav__link">Weight Management</span>
+        <span class="hyuga-nav__link">Women's Health</span>
+        <span class="hyuga-nav__link">Ayurvedic & Herbal</span>
+        <span class="hyuga-nav__link">Sexual Health</span>
+        <span class="hyuga-nav__link">Fitness Gears</span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hyuga-drawer" data-hyuga-drawer>
+    <div class="hyuga-drawer__mask" data-hyuga-close></div>
+    <div class="hyuga-drawer__panel">
+      <button type="button" data-hyuga-close aria-label="Close" class="hyuga-drawer__close">×</button>
+      <p class="hyuga-drawer__title">Shop by Category</p>
+      <span>Health Supplements</span>
+      <span>Sports Nutrition</span>
+      <span>Health Foods & Beverages</span>
+      <span>Hair, Skin & Nails</span>
+      <span>Weight Management</span>
+      <span>Women's Health</span>
+      <span>Ayurvedic & Herbal Supplements</span>
+      <span>Sexual Health</span>
+      <span>Fitness Gears & Accessories</span>
+      <span>Offer Zone</span>
+      <span>Hyuga One</span>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga header",
+  "settings": []
+}
+{% endschema %}

@@ -1,1 +1,9 @@
-{"sections":{"main":{"type":"main-404","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "hyuga-home": {
+      "type": "hyuga-home",
+      "settings": {}
+    }
+  },
+  "order": ["hyuga-home"]
+}
