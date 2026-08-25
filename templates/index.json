@@ -904,57 +904,6 @@
         "card_style": "category"
       }
     },
-    "focus": {
-      "type": "hyuga-image-row",
-      "blocks": {
-        "i1": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Glutathione_16_3.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i2": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Magnesium_2.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i3": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Collagen_50_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "i4": {
-          "type": "item",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/ACV-2.png",
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Purpose-Built Supplements",
-        "button_label": "",
-        "button_link": "",
-        "layout": "hyuga-focus",
-        "card_style": "offer"
-      }
-    },
     "why_choose": {
       "type": "hyuga-why-choose",
       "blocks": {
@@ -1112,6 +1061,165 @@
         "button_link": "",
         "collection": "",
         "limit": 8
+      }
+    },
+    "focus": {
+      "type": "hyuga-purpose",
+      "blocks": {
+        "f1": {
+          "type": "banner",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Glutathione_16_3.png",
+            "line_1": "",
+            "line_2": "",
+            "line_3": "",
+            "bg_from": "#dbeafe",
+            "bg_to": "#93c5fd",
+            "text_color": "#1e3a8a",
+            "link": ""
+          }
+        },
+        "f2": {
+          "type": "banner",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Magnesium_2.png",
+            "line_1": "",
+            "line_2": "",
+            "line_3": "",
+            "bg_from": "#dbeafe",
+            "bg_to": "#93c5fd",
+            "text_color": "#1e3a8a",
+            "link": ""
+          }
+        },
+        "f3": {
+          "type": "banner",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Collagen_50_1.png",
+            "line_1": "",
+            "line_2": "",
+            "line_3": "",
+            "bg_from": "#dbeafe",
+            "bg_to": "#93c5fd",
+            "text_color": "#1e3a8a",
+            "link": ""
+          }
+        },
+        "f4": {
+          "type": "banner",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/ACV-2.png",
+            "line_1": "",
+            "line_2": "",
+            "line_3": "",
+            "bg_from": "#dbeafe",
+            "bg_to": "#93c5fd",
+            "text_color": "#1e3a8a",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "heading": "Purpose-Built Supplements"
+      }
+    },
+    "brand_rail": {
+      "type": "hyuga-brand-rail",
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_cocoa_chocolate-_front_1.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Chelated Magnesium Glycinate | 120 Veg",
+            "qty": "165g",
+            "price": "699",
+            "unit_price": "₹13.6/count",
+            "compare": "999",
+            "off": "30",
+            "rating": "4.7",
+            "reviews": "385",
+            "delivery": "Get it by Thu, Aug 27",
+            "link": ""
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsnb33w4.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Japanese Reduced L Glutathione 500mg",
+            "qty": "60 Tablets",
+            "price": "816",
+            "unit_price": "₹13.6/count",
+            "compare": "1249",
+            "off": "35",
+            "rating": "4.7",
+            "reviews": "385",
+            "delivery": "Get it by Thu, Aug 27",
+            "link": ""
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsgp48s8.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Hydrolyzed Marine Collagen Peptides",
+            "qty": "90 Tablets",
+            "price": "699",
+            "unit_price": "",
+            "compare": "999",
+            "off": "25",
+            "rating": "4.7",
+            "reviews": "385",
+            "delivery": "Get it by Thu, Aug 27",
+            "link": ""
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo5.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Multivitamin for Men & Women",
+            "qty": "60 Tablets",
+            "price": "549",
+            "unit_price": "",
+            "compare": "799",
+            "off": "31",
+            "rating": "4.6",
+            "reviews": "210",
+            "delivery": "Get it by Thu, Aug 27",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "heading": "",
+        "brand_image": "shopify://shop_images/24th_Aug-SB-2-Web_2x_80c11d6a-cea3-4d46-8a25-e85923000c16.webp",
+        "brand_image_url": "",
+        "brand_name": "CARBAMIDE FORTE",
+        "tagline": "Enhance your vitality",
+        "bg_from": "#9ed7ff",
+        "bg_to": "#4ba3e3",
+        "cta_label": "Add to cart"
       }
     },
     "brands": {
@@ -1407,9 +1515,10 @@
     "stack",
     "hyuga_hero_cYVY6D",
     "hyuga_image_row_XA6zGd",
-    "focus",
     "why_choose",
     "hyuga_products_4BieGn",
+    "focus",
+    "brand_rail",
     "brands",
     "pantry",
     "protein",

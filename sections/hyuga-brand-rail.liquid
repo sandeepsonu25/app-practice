@@ -1,0 +1,252 @@
+{%- liquid
+  assign brand_src = section.settings.brand_image_url
+  if section.settings.brand_image != blank
+    assign brand_src = section.settings.brand_image | image_url: width: 900
+  endif
+-%}
+
+<div class="hyuga-app">
+  <div class="hyuga-wrap">
+    <section class="hyuga-brand-rail" data-hyuga-brand-rail>
+      {%- if section.settings.heading != blank -%}
+        <div class="hyuga-section__head">
+          <h2>{{ section.settings.heading }}</h2>
+        </div>
+      {%- endif -%}
+
+      <div
+        class="hyuga-brand-rail__panel{% if brand_src != blank %} hyuga-brand-rail__panel--has-bg{% endif %}"
+        style="--brand-from:{{ section.settings.bg_from }};--brand-to:{{ section.settings.bg_to }};{% if brand_src != blank %}background-image:url('{{ brand_src | escape }}');{% endif %}"
+      >
+        <aside class="hyuga-brand-rail__brand">
+          {%- if brand_src == blank -%}
+            <div class="hyuga-brand-rail__brand-fallback">
+              {%- if section.settings.brand_name != blank -%}
+                <span class="hyuga-brand-rail__logo">{{ section.settings.brand_name }}</span>
+              {%- endif -%}
+              {%- if section.settings.tagline != blank -%}
+                <p>{{ section.settings.tagline }}</p>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </aside>
+
+        <div class="hyuga-brand-rail__products">
+          <div class="hyuga-brand-rail__track" data-hyuga-brand-rail-track>
+            {%- for block in section.blocks -%}
+              {%- liquid
+                assign src = block.settings.image_url
+                if block.settings.image != blank
+                  assign src = block.settings.image | image_url: width: 400
+                endif
+              -%}
+              <article class="hyuga-brand-card" {{ block.shopify_attributes }}>
+                {%- if block.settings.badge != blank -%}
+                  <span class="hyuga-brand-card__badge">{{ block.settings.badge }}</span>
+                {%- endif -%}
+
+                <div class="hyuga-brand-card__media">
+                  {%- if src != blank -%}
+                    <img src="{{ src }}" alt="{{ block.settings.title | escape }}" width="180" height="180" loading="lazy">
+                  {%- endif -%}
+                  {%- if block.settings.quality_badge != blank -%}
+                    <span class="hyuga-brand-card__quality">{{ block.settings.quality_badge }}</span>
+                  {%- endif -%}
+                </div>
+
+                {%- if block.settings.rating != blank -%}
+                  <div class="hyuga-brand-card__rating">
+                    <span aria-hidden="true">★</span>
+                    {{ block.settings.rating }}
+                    {%- if block.settings.reviews != blank -%}
+                      <small>({{ block.settings.reviews }})</small>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+
+                <h3 class="hyuga-brand-card__title">{{ block.settings.title }}</h3>
+
+                {%- if block.settings.qty != blank -%}
+                  <p class="hyuga-brand-card__qty">{{ block.settings.qty }}</p>
+                {%- endif -%}
+
+                <div class="hyuga-brand-card__price">
+                  <b>₹{{ block.settings.price }}</b>
+                  {%- if block.settings.unit_price != blank -%}
+                    <span class="hyuga-brand-card__unit">({{ block.settings.unit_price }})</span>
+                  {%- endif -%}
+                  {%- if block.settings.compare != blank -%}
+                    <s>₹{{ block.settings.compare }}</s>
+                  {%- endif -%}
+                  {%- if block.settings.off != blank -%}
+                    <em>{{ block.settings.off }}% OFF</em>
+                  {%- endif -%}
+                </div>
+
+                {%- if block.settings.delivery != blank -%}
+                  <p class="hyuga-brand-card__ship">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v10H8.5a2.5 2.5 0 0 1-5 0H3V7z"></path><path d="M14 10h4l3 4v3h-2.1a2.5 2.5 0 0 1-4.8 0H14v-7z"></path></svg>
+                    {{ block.settings.delivery }}
+                  </p>
+                {%- endif -%}
+
+                {%- if block.settings.link != blank -%}
+                  <a class="hyuga-brand-card__cta" href="{{ block.settings.link }}">{{ section.settings.cta_label }}</a>
+                {%- else -%}
+                  <span class="hyuga-brand-card__cta">{{ section.settings.cta_label }}</span>
+                {%- endif -%}
+              </article>
+            {%- endfor -%}
+          </div>
+
+          {%- if section.blocks.size > 1 -%}
+            <button type="button" class="hyuga-brand-rail__next" data-hyuga-brand-rail-next aria-label="Next products">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
+            </button>
+          {%- endif -%}
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga brand rail",
+  "tag": "section",
+  "class": "hyuga-section-root",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading"
+    },
+    {
+      "type": "header",
+      "content": "Section background"
+    },
+    { "type": "image_picker", "id": "brand_image", "label": "Background image" },
+    {
+      "type": "text",
+      "id": "brand_image_url",
+      "label": "Background image URL",
+      "info": "Applied to the full section panel behind brand + products"
+    },
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand name fallback",
+      "default": "CARBAMIDE FORTE"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline fallback",
+      "default": "Enhance your vitality"
+    },
+    { "type": "color", "id": "bg_from", "label": "Panel gradient start", "default": "#9ED7FF" },
+    { "type": "color", "id": "bg_to", "label": "Panel gradient end", "default": "#4BA3E3" },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Product button label",
+      "default": "Add to cart"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Product image" },
+        { "type": "text", "id": "image_url", "label": "Image URL fallback" },
+        { "type": "text", "id": "badge", "label": "Top badge", "default": "BESTSELLER" },
+        { "type": "text", "id": "quality_badge", "label": "Quality badge", "default": "HEAVY METALS TESTED" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Carbamide Forte Chelated Magnesium Glycinate" },
+        { "type": "text", "id": "qty", "label": "Quantity / size", "default": "120 Veg Tablets" },
+        { "type": "text", "id": "price", "label": "Price", "default": "699" },
+        { "type": "text", "id": "unit_price", "label": "Unit price" },
+        { "type": "text", "id": "compare", "label": "Compare at price", "default": "999" },
+        { "type": "text", "id": "off", "label": "Discount %", "default": "30" },
+        { "type": "text", "id": "rating", "label": "Rating", "default": "4.7" },
+        { "type": "text", "id": "reviews", "label": "Review count", "default": "385" },
+        { "type": "text", "id": "delivery", "label": "Delivery text", "default": "Get it by Thu, Aug 27" },
+        { "type": "url", "id": "link", "label": "Link (optional)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hyuga brand rail",
+      "blocks": [
+        {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/w/h/whey_-_cocoa_chocolate-_front_1.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Chelated Magnesium Glycinate | 120 Veg",
+            "qty": "165g",
+            "price": "699",
+            "unit_price": "₹13.6/count",
+            "compare": "999",
+            "off": "30",
+            "rating": "4.7",
+            "reviews": "385",
+            "delivery": "Get it by Thu, Aug 27"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsnb33w4.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Japanese Reduced L Glutathione 500mg",
+            "qty": "60 Tablets",
+            "price": "816",
+            "unit_price": "₹13.6/count",
+            "compare": "1249",
+            "off": "35",
+            "rating": "4.7",
+            "reviews": "385",
+            "delivery": "Get it by Thu, Aug 27"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/h/s/hsgp48s8.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Hydrolyzed Marine Collagen Peptides",
+            "qty": "90 Tablets",
+            "price": "699",
+            "compare": "999",
+            "off": "25",
+            "rating": "4.7",
+            "reviews": "385",
+            "delivery": "Get it by Thu, Aug 27"
+          }
+        },
+        {
+          "type": "product",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/catalog/product/c/o/combo5.png",
+            "badge": "BESTSELLER",
+            "quality_badge": "HEAVY METALS TESTED",
+            "title": "Carbamide Forte Multivitamin for Men & Women",
+            "qty": "60 Tablets",
+            "price": "549",
+            "compare": "799",
+            "off": "31",
+            "rating": "4.6",
+            "reviews": "210",
+            "delivery": "Get it by Thu, Aug 27"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

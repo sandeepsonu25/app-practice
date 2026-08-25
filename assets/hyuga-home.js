@@ -43,5 +43,26 @@
         });
       });
     });
+    document.querySelectorAll('[data-hyuga-purpose]').forEach(function (section) {
+      var rail = section.querySelector('[data-hyuga-purpose-rail]');
+      var next = section.querySelector('[data-hyuga-purpose-next]');
+      if (!rail || !next) return;
+      next.addEventListener('click', function () {
+        var card = rail.querySelector('.hyuga-purpose__card');
+        var step = card ? card.getBoundingClientRect().width + 12 : rail.clientWidth * 0.8;
+        rail.scrollBy({ left: step, behavior: 'smooth' });
+      });
+    });
+
+    document.querySelectorAll('[data-hyuga-brand-rail]').forEach(function (section) {
+      var track = section.querySelector('[data-hyuga-brand-rail-track]');
+      var next = section.querySelector('[data-hyuga-brand-rail-next]');
+      if (!track || !next) return;
+      next.addEventListener('click', function () {
+        var card = track.querySelector('.hyuga-brand-card');
+        var step = card ? card.getBoundingClientRect().width + 12 : track.clientWidth * 0.7;
+        track.scrollBy({ left: step, behavior: 'smooth' });
+      });
+    });
   });
 })();

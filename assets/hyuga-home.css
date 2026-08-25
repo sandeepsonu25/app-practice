@@ -685,6 +685,409 @@ body.hyuga-store #MainContent .shopify-section {
   font-weight: 600;
 }
 
+/* Purpose-Built Supplements carousel */
+.hyuga-purpose__viewport {
+  position: relative;
+}
+
+.hyuga-purpose__rail {
+  --hyuga-rail-visible: 1.15;
+}
+
+@media (min-width: 750px) {
+  .hyuga-purpose__rail {
+    --hyuga-rail-visible: 2.4;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hyuga-purpose__rail {
+    --hyuga-rail-visible: 2.6;
+  }
+}
+
+.hyuga-purpose__card {
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--purpose-from, #dbeafe), var(--purpose-to, #93c5fd));
+}
+
+.hyuga-purpose__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: unset;
+}
+
+.hyuga-purpose__card--overlay .hyuga-purpose__img {
+  position: relative;
+  right: auto;
+  top: auto;
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+  object-position: unset;
+  padding: 0;
+}
+
+.hyuga-purpose__text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 48%;
+  padding: 16px 12px 16px 18px;
+  color: var(--purpose-text, #1e3a8a);
+}
+
+.hyuga-purpose__line1 {
+  font-size: clamp(11px, 1.5vw, 15px);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.hyuga-purpose__line2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.hyuga-purpose__line2::before,
+.hyuga-purpose__line2::after {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.hyuga-purpose__line3 {
+  font-size: clamp(18px, 2.4vw, 28px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hyuga-purpose__next {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #1a1a5e;
+  box-shadow: 0 4px 16px rgba(26, 26, 94, 0.18);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-purpose__next:hover {
+  background: #f8f8ff;
+}
+
+@media (max-width: 749px) {
+  .hyuga-purpose__next {
+    width: 34px;
+    height: 34px;
+    right: 4px;
+  }
+}
+
+/* Brand rail — left brand panel + product carousel */
+.hyuga-brand-rail {
+  margin: 12px 0 32px;
+}
+
+.hyuga-brand-rail__panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, var(--brand-from, #9ed7ff) 0%, var(--brand-to, #4ba3e3) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hyuga-brand-rail__panel--has-bg {
+  background-color: transparent;
+}
+
+.hyuga-brand-rail__brand {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 160px;
+}
+
+.hyuga-brand-rail__brand-fallback {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: 160px;
+  padding: 20px;
+  color: #123a7a;
+}
+
+.hyuga-brand-rail__logo {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 8px 12px;
+  background: #123a7a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+
+.hyuga-brand-rail__brand-fallback p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.15;
+  max-width: 10ch;
+}
+
+.hyuga-brand-rail__products {
+  position: relative;
+  min-width: 0;
+}
+
+.hyuga-brand-rail__track {
+  --hyuga-rail-gap: 12px;
+  --hyuga-rail-visible: 1.4;
+  display: flex;
+  gap: var(--hyuga-rail-gap);
+  overflow-x: auto;
+  padding: 4px 2px 8px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.hyuga-brand-rail__track::-webkit-scrollbar {
+  display: none;
+}
+
+.hyuga-brand-rail__track > * {
+  flex: 0 0 calc((100% - (var(--hyuga-rail-visible) - 1) * var(--hyuga-rail-gap)) / var(--hyuga-rail-visible));
+  max-width: calc((100% - (var(--hyuga-rail-visible) - 1) * var(--hyuga-rail-gap)) / var(--hyuga-rail-visible));
+  scroll-snap-align: start;
+  min-width: 0;
+}
+
+.hyuga-brand-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(18, 58, 122, 0.1);
+  position: relative;
+}
+
+.hyuga-brand-card__badge {
+  align-self: flex-start;
+  margin-bottom: 6px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #1a1a5e;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.hyuga-brand-card__media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 140px;
+  margin-bottom: 8px;
+}
+
+.hyuga-brand-card__media img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.hyuga-brand-card__quality {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #e8f8ef;
+  color: #15803d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hyuga-brand-card__quality::before {
+  content: "✓";
+  font-weight: 900;
+}
+
+.hyuga-brand-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.hyuga-brand-card__rating span {
+  color: #16a34a;
+}
+
+.hyuga-brand-card__rating small {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.hyuga-brand-card__title {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111827;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+
+.hyuga-brand-card__qty {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.hyuga-brand-card__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.hyuga-brand-card__price b {
+  font-size: 16px;
+  color: #111827;
+}
+
+.hyuga-brand-card__unit {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.hyuga-brand-card__price s {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.hyuga-brand-card__price em {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 800;
+  color: #15803d;
+  background: #e8f8ef;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.hyuga-brand-card__ship {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.hyuga-brand-card__cta {
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  background: #1a1a5e;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hyuga-brand-rail__next {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #1a1a5e;
+  box-shadow: 0 4px 16px rgba(26, 26, 94, 0.18);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 750px) {
+  .hyuga-brand-rail__panel {
+    grid-template-columns: minmax(220px, 0.9fr) minmax(0, 2.1fr);
+    gap: 14px;
+    padding: 14px;
+    align-items: stretch;
+  }
+
+  .hyuga-brand-rail__brand {
+    min-height: 100%;
+    align-self: stretch;
+  }
+
+  .hyuga-brand-rail__track {
+    --hyuga-rail-visible: 3;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hyuga-brand-rail__track {
+    --hyuga-rail-visible: 3.2;
+  }
+}
+
 /* Why Choose HyugaLife */
 .hyuga-why {
   margin: 12px 0 32px;
