@@ -513,7 +513,7 @@ body.hyuga-store #MainContent .shopify-section {
 
 .hyuga-rail {
   --hyuga-rail-gap: 12px;
-  --hyuga-rail-visible: 3; /* mobile: 3 in viewport */
+  --hyuga-rail-visible: 2; /* mobile: 3 in viewport */
   display: flex;
   gap: var(--hyuga-rail-gap);
   overflow-x: auto;
@@ -1204,6 +1204,166 @@ body.hyuga-store #MainContent .shopify-section {
 
 .hyuga-blog__next:hover {
   color: #1a1a5e;
+}
+
+/* App download banner */
+.hyuga-app-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0 32px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 40%, var(--app-to, #fff6e8) 0%, transparent 55%),
+    linear-gradient(90deg, var(--app-from, #ffe8c8), var(--app-to, #fff6e8) 55%, var(--app-from, #ffe8c8));
+  box-shadow: 0 4px 18px rgba(180, 120, 60, 0.12);
+  overflow: hidden;
+}
+
+.hyuga-app-banner__phone {
+  justify-self: center;
+  max-width: 160px;
+  width: 100%;
+}
+
+.hyuga-app-banner__phone img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hyuga-app-banner__phone-fallback {
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-app-banner__phone-shell {
+  width: 110px;
+  height: 180px;
+  border-radius: 22px;
+  background: #111;
+  border: 4px solid #222;
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 2px #333;
+}
+
+.hyuga-app-banner__app-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ff8a3d, #ff5a1f);
+  color: #1a1a5e;
+  font-size: 28px;
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-app-banner__copy {
+  text-align: center;
+}
+
+.hyuga-app-banner__copy h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.hyuga-app-banner__text {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #374151;
+}
+
+.hyuga-app-banner__text p {
+  margin: 0;
+}
+
+.hyuga-app-banner__text strong {
+  font-weight: 800;
+  color: #111827;
+}
+
+.hyuga-app-banner__stores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hyuga-app-banner__store {
+  display: block;
+  line-height: 0;
+}
+
+.hyuga-app-banner__store img {
+  width: 148px;
+  height: auto;
+  display: block;
+}
+
+.hyuga-app-banner__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 148px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+}
+
+.hyuga-app-banner__badge span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  text-align: left;
+}
+
+.hyuga-app-banner__badge small {
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+}
+
+.hyuga-app-banner__badge b {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (min-width: 750px) {
+  .hyuga-app-banner {
+    grid-template-columns: 180px 1fr auto;
+    gap: 24px;
+    padding: 0 28px 0 8px;
+    min-height: 140px;
+  }
+
+  .hyuga-app-banner__phone {
+    max-width: 180px;
+    align-self: end;
+    margin-bottom: -8px;
+  }
+
+  .hyuga-app-banner__copy {
+    text-align: left;
+  }
+
+  .hyuga-app-banner__copy h2 {
+    font-size: 28px;
+  }
+
+  .hyuga-app-banner__text {
+    font-size: 16px;
+  }
+
+  .hyuga-app-banner__stores {
+    align-items: stretch;
+  }
 }
 
 /* Why Choose HyugaLife */

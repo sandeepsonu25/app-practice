@@ -1,0 +1,137 @@
+{%- liquid
+  assign phone_src = section.settings.phone_image_url
+  if section.settings.phone_image != blank
+    assign phone_src = section.settings.phone_image | image_url: width: 600
+  endif
+
+  assign play_src = section.settings.play_badge_url
+  if section.settings.play_badge != blank
+    assign play_src = section.settings.play_badge | image_url: width: 400
+  endif
+
+  assign apple_src = section.settings.apple_badge_url
+  if section.settings.apple_badge != blank
+    assign apple_src = section.settings.apple_badge | image_url: width: 400
+  endif
+-%}
+
+<div class="hyuga-app">
+  <div class="hyuga-wrap">
+    <section
+      class="hyuga-app-banner"
+      style="--app-from:{{ section.settings.bg_from }};--app-to:{{ section.settings.bg_to }};"
+    >
+      <div class="hyuga-app-banner__phone">
+        {%- if phone_src != blank -%}
+          <img src="{{ phone_src }}" alt="{{ section.settings.heading | escape }}" width="220" height="280" loading="lazy">
+        {%- else -%}
+          <div class="hyuga-app-banner__phone-fallback" aria-hidden="true">
+            <div class="hyuga-app-banner__phone-shell">
+              <span class="hyuga-app-banner__app-icon">H</span>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="hyuga-app-banner__copy">
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="hyuga-app-banner__text">{{ section.settings.text }}</div>
+        {%- endif -%}
+      </div>
+
+      <div class="hyuga-app-banner__stores">
+        <a
+          class="hyuga-app-banner__store"
+          {% if section.settings.play_link != blank %}href="{{ section.settings.play_link }}" target="_blank" rel="noopener"{% endif %}
+          aria-label="Get it on Google Play"
+        >
+          {%- if play_src != blank -%}
+            <img src="{{ play_src }}" alt="Get it on Google Play" width="150" height="45" loading="lazy">
+          {%- else -%}
+            <span class="hyuga-app-banner__badge hyuga-app-banner__badge--play">
+              <svg width="18" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4335" d="M3 20.5V3.5L14 12 3 20.5z"/><path fill="#FBBC04" d="M3 3.5 14 12l5.2-3L8.2 2.2 3 3.5z"/><path fill="#4285F4" d="M14 12 3 20.5l5.2 1.3L19.2 15 14 12z"/><path fill="#34A853" d="M14 12l5.2 3 1.8-1V10l-1.8-1L14 12z"/></svg>
+              <span><small>GET IT ON</small><b>Google Play</b></span>
+            </span>
+          {%- endif -%}
+        </a>
+
+        <a
+          class="hyuga-app-banner__store"
+          {% if section.settings.apple_link != blank %}href="{{ section.settings.apple_link }}" target="_blank" rel="noopener"{% endif %}
+          aria-label="Download on the App Store"
+        >
+          {%- if apple_src != blank -%}
+            <img src="{{ apple_src }}" alt="Download on the App Store" width="150" height="45" loading="lazy">
+          {%- else -%}
+            <span class="hyuga-app-banner__badge hyuga-app-banner__badge--apple">
+              <svg width="18" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.7 2.3-1.6 2.8-.4 6.9 1.1 9.2.8 1.1 1.7 2.3 2.9 2.3 1.2-.1 1.6-.7 3-.7s1.8.7 3 .7c1.2 0 2-.1 2.9-2.3.7-1 1.2-2 1.4-2.6-3.1-1.2-3-4.5-3-5.1zM14.4 5.7c.6-.8 1.1-1.8.9-2.9-1 .1-2.1.7-2.7 1.5-.6.7-1.1 1.8-.9 2.8 1.1.1 2.1-.5 2.7-1.4z"/></svg>
+              <span><small>Download on the</small><b>App Store</b></span>
+            </span>
+          {%- endif -%}
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga app banner",
+  "tag": "section",
+  "class": "hyuga-section-root",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_from",
+      "label": "Background start",
+      "default": "#FFE8C8"
+    },
+    {
+      "type": "color",
+      "id": "bg_to",
+      "label": "Background end",
+      "default": "#FFF6E8"
+    },
+    {
+      "type": "header",
+      "content": "Phone graphic"
+    },
+    { "type": "image_picker", "id": "phone_image", "label": "Phone image" },
+    {
+      "type": "text",
+      "id": "phone_image_url",
+      "label": "Phone image URL"
+    },
+    {
+      "type": "header",
+      "content": "Copy"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Exciting App offers!"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Description",
+      "default": "<p>Get <strong>10% OFF</strong> your first order + <strong>1% cashback</strong> on app!</p>"
+    },
+    {
+      "type": "header",
+      "content": "Store badges"
+    },
+    { "type": "url", "id": "play_link", "label": "Google Play link" },
+    { "type": "image_picker", "id": "play_badge", "label": "Google Play badge image" },
+    { "type": "text", "id": "play_badge_url", "label": "Google Play badge URL" },
+    { "type": "url", "id": "apple_link", "label": "App Store link" },
+    { "type": "image_picker", "id": "apple_badge", "label": "App Store badge image" },
+    { "type": "text", "id": "apple_badge_url", "label": "App Store badge URL" }
+  ],
+  "presets": [{ "name": "Hyuga app banner" }]
+}
+{% endschema %}
