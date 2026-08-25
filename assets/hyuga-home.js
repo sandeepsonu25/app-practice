@@ -75,5 +75,16 @@
         rail.scrollBy({ left: step, behavior: 'smooth' });
       });
     });
+
+    document.querySelectorAll('[data-hyuga-plp-rail]').forEach(function (section) {
+      var track = section.querySelector('[data-hyuga-plp-rail-track]');
+      var next = section.querySelector('[data-hyuga-plp-rail-next]');
+      if (!track || !next) return;
+      next.addEventListener('click', function () {
+        var card = track.querySelector('.hyuga-plp-rail-card');
+        var step = card ? card.getBoundingClientRect().width + 12 : track.clientWidth * 0.7;
+        track.scrollBy({ left: step, behavior: 'smooth' });
+      });
+    });
   });
 })();

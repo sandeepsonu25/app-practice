@@ -1,0 +1,1755 @@
+[
+  {
+    "attribute_code": "category_ids",
+    "count": 16,
+    "label": "Narrow By Category",
+    "options": [
+      {
+        "label": "Calcium supplements",
+        "value": 1159,
+        "count": 78
+      },
+      {
+        "label": "Co Q10",
+        "value": 1162,
+        "count": 22
+      },
+      {
+        "label": "Glucosamine",
+        "value": 1157,
+        "count": 19
+      },
+      {
+        "label": "Health Supplements Combos",
+        "value": 932,
+        "count": 98
+      },
+      {
+        "label": "Iron",
+        "value": 1163,
+        "count": 32
+      },
+      {
+        "label": "Lutein (Eye Care)",
+        "value": 6,
+        "count": 17
+      },
+      {
+        "label": "Magnesium",
+        "value": 1165,
+        "count": 104
+      },
+      {
+        "label": "Melatonin (Sleep care)",
+        "value": 7,
+        "count": 101
+      },
+      {
+        "label": "Multivitamins",
+        "value": 10,
+        "count": 259
+      },
+      {
+        "label": "Omega 3 & Fish Oil",
+        "value": 11,
+        "count": 177
+      },
+      {
+        "label": "Other Health Supplements",
+        "value": 12,
+        "count": 509
+      },
+      {
+        "label": "Pre & Probiotics (Gut Health)",
+        "value": 8,
+        "count": 158
+      },
+      {
+        "label": "Vitamin B",
+        "value": 1161,
+        "count": 40
+      },
+      {
+        "label": "Vitamin C (Immunity)",
+        "value": 1158,
+        "count": 60
+      },
+      {
+        "label": "Vitamin D3",
+        "value": 1160,
+        "count": 70
+      },
+      {
+        "label": "Zinc supplements",
+        "value": 1164,
+        "count": 35
+      }
+    ],
+    "position": 1
+  },
+  {
+    "attribute_code": "hyugalife_program",
+    "count": 1,
+    "label": "Hyugalife Assured",
+    "options": [
+      {
+        "value": "2379",
+        "label": "Heavy Metals Tested",
+        "count": 29
+      }
+    ],
+    "position": 20
+  },
+  {
+    "attribute_code": "tags",
+    "count": 5,
+    "label": "Program & Offers",
+    "options": [
+      {
+        "label": "Bestseller",
+        "value": "3739",
+        "count": 133
+      },
+      {
+        "label": "Big Brand Rush",
+        "value": "3744",
+        "count": 25
+      },
+      {
+        "label": "Featured",
+        "value": "3738",
+        "count": 16
+      },
+      {
+        "label": "Deal of the day",
+        "value": "3741",
+        "count": 4
+      },
+      {
+        "label": "Lowest \u20b9 In India",
+        "value": "4211",
+        "count": 1
+      }
+    ],
+    "position": 30
+  },
+  {
+    "attribute_code": "concern",
+    "count": 18,
+    "label": "Concern",
+    "options": [
+      {
+        "value": "935",
+        "label": "Beauty",
+        "count": 1
+      },
+      {
+        "value": "963",
+        "label": "Bones & Joints",
+        "count": 75
+      },
+      {
+        "value": "970",
+        "label": "Daily Vitamins",
+        "count": 61
+      },
+      {
+        "value": "9",
+        "label": "Diabetes",
+        "count": 3
+      },
+      {
+        "value": "959",
+        "label": "Gut Health",
+        "count": 33
+      },
+      {
+        "value": "936",
+        "label": "Heart Care",
+        "count": 78
+      },
+      {
+        "value": "1114",
+        "label": "Hydration & Energy",
+        "count": 1
+      },
+      {
+        "value": "16",
+        "label": "Immunity",
+        "count": 38
+      },
+      {
+        "value": "934",
+        "label": "Immunity Boosters",
+        "count": 1
+      },
+      {
+        "value": "966",
+        "label": "Kidney & UTI",
+        "count": 2
+      },
+      {
+        "value": "961",
+        "label": "Liver Care",
+        "count": 3
+      },
+      {
+        "value": "962",
+        "label": "Muscle Gain",
+        "count": 4
+      },
+      {
+        "value": "960",
+        "label": "Muscle Repair / Recovery",
+        "count": 3
+      },
+      {
+        "value": "976",
+        "label": "Pain Management",
+        "count": 1
+      },
+      {
+        "value": "967",
+        "label": "Sexual Wellness",
+        "count": 1
+      },
+      {
+        "value": "939",
+        "label": "Skin",
+        "count": 7
+      },
+      {
+        "value": "21",
+        "label": "Sleep, Stress & Mental Wellness",
+        "count": 41
+      },
+      {
+        "value": "22",
+        "label": "Weight Management",
+        "count": 8
+      }
+    ],
+    "position": 40
+  },
+  {
+    "attribute_code": "brand",
+    "count": 148,
+    "label": "Brand",
+    "options": [
+      {
+        "label": "AADAR",
+        "value": "285",
+        "count": 2
+      },
+      {
+        "label": "Ace Blend",
+        "value": "580",
+        "count": 8
+      },
+      {
+        "label": "Alpino",
+        "value": "486",
+        "count": 6
+      },
+      {
+        "label": "andMe",
+        "value": "609",
+        "count": 11
+      },
+      {
+        "label": "AS-IT-IS Nutrition",
+        "value": "2275",
+        "count": 13
+      },
+      {
+        "label": "Baidyanath Jhansi",
+        "value": "450",
+        "count": 1
+      },
+      {
+        "label": "Baidyanath Nagpur",
+        "value": "571",
+        "count": 3
+      },
+      {
+        "label": "BBETTER",
+        "value": "287",
+        "count": 10
+      },
+      {
+        "label": "BEAST LIFE",
+        "value": "3471",
+        "count": 4
+      },
+      {
+        "label": "Best Naturals",
+        "value": "3596",
+        "count": 10
+      },
+      {
+        "label": "Better Nutrition",
+        "value": "1171",
+        "count": 2
+      },
+      {
+        "label": "Biovitalia Organics",
+        "value": "2339",
+        "count": 16
+      },
+      {
+        "label": "Blubein",
+        "value": "3153",
+        "count": 11
+      },
+      {
+        "label": "BodyFirst",
+        "value": "557",
+        "count": 14
+      },
+      {
+        "label": "Bold Care",
+        "value": "290",
+        "count": 5
+      },
+      {
+        "label": "Boldfit",
+        "value": "3154",
+        "count": 21
+      },
+      {
+        "label": "BOLT",
+        "value": "566",
+        "count": 2
+      },
+      {
+        "label": "BonAiyu Health",
+        "value": "877",
+        "count": 2
+      },
+      {
+        "label": "BRITPRO London\u00ae",
+        "value": "4263",
+        "count": 2
+      },
+      {
+        "label": "Briyo supplements",
+        "value": "2098",
+        "count": 21
+      },
+      {
+        "label": "By Nature",
+        "value": "467",
+        "count": 1
+      },
+      {
+        "label": "Carbamide Forte",
+        "value": "504",
+        "count": 84
+      },
+      {
+        "label": "Centrum",
+        "value": "1339",
+        "count": 9
+      },
+      {
+        "label": "Chicnutrix",
+        "value": "518",
+        "count": 2
+      },
+      {
+        "label": "Cureveda",
+        "value": "3796",
+        "count": 4
+      },
+      {
+        "label": "Dabur",
+        "value": "2668",
+        "count": 1
+      },
+      {
+        "label": "Denzour Nutrition",
+        "value": "3133",
+        "count": 8
+      },
+      {
+        "label": "Desi Nutri",
+        "value": "2766",
+        "count": 1
+      },
+      {
+        "label": "Divine Nutrition",
+        "value": "2922",
+        "count": 7
+      },
+      {
+        "label": "Divya Himalayan",
+        "value": "295",
+        "count": 13
+      },
+      {
+        "label": "Dr Mantra",
+        "value": "3698",
+        "count": 40
+      },
+      {
+        "label": "Dr Vaidya's",
+        "value": "564",
+        "count": 8
+      },
+      {
+        "label": "Dr. Morepen",
+        "value": "296",
+        "count": 24
+      },
+      {
+        "label": "Dr. Reddy\u2019s",
+        "value": "2746",
+        "count": 1
+      },
+      {
+        "label": "Dr.Patkar",
+        "value": "4237",
+        "count": 1
+      },
+      {
+        "label": "Ecotyl",
+        "value": "2836",
+        "count": 1
+      },
+      {
+        "label": "EMPIRE 1900",
+        "value": "3220",
+        "count": 4
+      },
+      {
+        "label": "Fast & Up",
+        "value": "298",
+        "count": 21
+      },
+      {
+        "label": "FB Nutrition",
+        "value": "4236",
+        "count": 1
+      },
+      {
+        "label": "Feroglobin",
+        "value": "1308",
+        "count": 1
+      },
+      {
+        "label": "Foodstrong",
+        "value": "459",
+        "count": 4
+      },
+      {
+        "label": "FYTIKA",
+        "value": "2063",
+        "count": 7
+      },
+      {
+        "label": "GAFFIT",
+        "value": "4377",
+        "count": 2
+      },
+      {
+        "label": "Gaia",
+        "value": "1340",
+        "count": 4
+      },
+      {
+        "label": "Giver Nutrition",
+        "value": "2052",
+        "count": 1
+      },
+      {
+        "label": "Globus Naturals",
+        "value": "300",
+        "count": 7
+      },
+      {
+        "label": "GNC",
+        "value": "1053",
+        "count": 30
+      },
+      {
+        "label": "Good Monk",
+        "value": "2901",
+        "count": 3
+      },
+      {
+        "label": "Gritzo",
+        "value": "303",
+        "count": 16
+      },
+      {
+        "label": "Gummsi",
+        "value": "2403",
+        "count": 19
+      },
+      {
+        "label": "Happy Cultures",
+        "value": "2136",
+        "count": 7
+      },
+      {
+        "label": "Health etc.",
+        "value": "3461",
+        "count": 1
+      },
+      {
+        "label": "HealthBest",
+        "value": "306",
+        "count": 14
+      },
+      {
+        "label": "HEALTHFARM",
+        "value": "1951",
+        "count": 2
+      },
+      {
+        "label": "HealthyHey Nutrition",
+        "value": "310",
+        "count": 102
+      },
+      {
+        "label": "HealthyHey Sports",
+        "value": "311",
+        "count": 6
+      },
+      {
+        "label": "Healthyr-U",
+        "value": "2845",
+        "count": 9
+      },
+      {
+        "label": "Hera",
+        "value": "2298",
+        "count": 2
+      },
+      {
+        "label": "Himalayan Organics",
+        "value": "313",
+        "count": 53
+      },
+      {
+        "label": "HK Vitals",
+        "value": "307",
+        "count": 49
+      },
+      {
+        "label": "Hyuga",
+        "value": "3239",
+        "count": 2
+      },
+      {
+        "label": "Hyuga One",
+        "value": "4065",
+        "count": 3
+      },
+      {
+        "label": "INJA WELLNESS",
+        "value": "491",
+        "count": 1
+      },
+      {
+        "label": "INLIFE",
+        "value": "762",
+        "count": 56
+      },
+      {
+        "label": "International protein",
+        "value": "4264",
+        "count": 6
+      },
+      {
+        "label": "Jiva Ayurveda",
+        "value": "1915",
+        "count": 4
+      },
+      {
+        "label": "JUBILANT Nutrihance",
+        "value": "870",
+        "count": 2
+      },
+      {
+        "label": "Kairali",
+        "value": "318",
+        "count": 2
+      },
+      {
+        "label": "Kapiva",
+        "value": "319",
+        "count": 2
+      },
+      {
+        "label": "Labrada",
+        "value": "3543",
+        "count": 2
+      },
+      {
+        "label": "Mars by GHC",
+        "value": "1892",
+        "count": 3
+      },
+      {
+        "label": "MAXN",
+        "value": "4309",
+        "count": 1
+      },
+      {
+        "label": "Miduty",
+        "value": "3947",
+        "count": 32
+      },
+      {
+        "label": "MuscleBlaze MB",
+        "value": "2138",
+        "count": 16
+      },
+      {
+        "label": "MuscleTech",
+        "value": "2042",
+        "count": 2
+      },
+      {
+        "label": "MyFitFuel",
+        "value": "1835",
+        "count": 4
+      },
+      {
+        "label": "NAKPRO",
+        "value": "3501",
+        "count": 5
+      },
+      {
+        "label": "Naturaltein",
+        "value": "3669",
+        "count": 25
+      },
+      {
+        "label": "NatXtra",
+        "value": "4217",
+        "count": 15
+      },
+      {
+        "label": "Neuherbs",
+        "value": "326",
+        "count": 21
+      },
+      {
+        "label": "Neulife",
+        "value": "2642",
+        "count": 15
+      },
+      {
+        "label": "Newedge",
+        "value": "3506",
+        "count": 5
+      },
+      {
+        "label": "Nirvasa",
+        "value": "1181",
+        "count": 8
+      },
+      {
+        "label": "NOURYSH",
+        "value": "2272",
+        "count": 7
+      },
+      {
+        "label": "Nutrabay",
+        "value": "576",
+        "count": 17
+      },
+      {
+        "label": "Nutrabud",
+        "value": "3499",
+        "count": 9
+      },
+      {
+        "label": "Nutrafirst",
+        "value": "1182",
+        "count": 5
+      },
+      {
+        "label": "Nutrazee",
+        "value": "2273",
+        "count": 5
+      },
+      {
+        "label": "NUTRIBURST",
+        "value": "1220",
+        "count": 54
+      },
+      {
+        "label": "NutriJa",
+        "value": "3477",
+        "count": 74
+      },
+      {
+        "label": "Nutriorg",
+        "value": "327",
+        "count": 8
+      },
+      {
+        "label": "Nyumi",
+        "value": "540",
+        "count": 3
+      },
+      {
+        "label": "Optimum Nutrition ON",
+        "value": "1277",
+        "count": 5
+      },
+      {
+        "label": "Organic India",
+        "value": "604",
+        "count": 3
+      },
+      {
+        "label": "Origin Nutrition",
+        "value": "2691",
+        "count": 1
+      },
+      {
+        "label": "Origins Nutra",
+        "value": "2899",
+        "count": 21
+      },
+      {
+        "label": "OSOAA",
+        "value": "4220",
+        "count": 7
+      },
+      {
+        "label": "OZiva",
+        "value": "328",
+        "count": 25
+      },
+      {
+        "label": "Pharmeasy",
+        "value": "3381",
+        "count": 7
+      },
+      {
+        "label": "Plix",
+        "value": "331",
+        "count": 5
+      },
+      {
+        "label": "Power Gummies",
+        "value": "502",
+        "count": 5
+      },
+      {
+        "label": "PRO360",
+        "value": "535",
+        "count": 12
+      },
+      {
+        "label": "Proquest Nutrition",
+        "value": "3829",
+        "count": 5
+      },
+      {
+        "label": "PROSUPPS",
+        "value": "2795",
+        "count": 1
+      },
+      {
+        "label": "Pure Nutrition",
+        "value": "600",
+        "count": 84
+      },
+      {
+        "label": "QUARANT",
+        "value": "2176",
+        "count": 2
+      },
+      {
+        "label": "RawRX",
+        "value": "549",
+        "count": 5
+      },
+      {
+        "label": "RediClinic",
+        "value": "3699",
+        "count": 4
+      },
+      {
+        "label": "Revital",
+        "value": "2242",
+        "count": 3
+      },
+      {
+        "label": "Sangya",
+        "value": "2460",
+        "count": 1
+      },
+      {
+        "label": "Saptamveda",
+        "value": "4214",
+        "count": 1
+      },
+      {
+        "label": "Setu Nutrition",
+        "value": "333",
+        "count": 2
+      },
+      {
+        "label": "Siddhayu",
+        "value": "568",
+        "count": 10
+      },
+      {
+        "label": "SilverEdge-Fabulous Forever",
+        "value": "1707",
+        "count": 3
+      },
+      {
+        "label": "Simply Earth",
+        "value": "3102",
+        "count": 7
+      },
+      {
+        "label": "Simply Herbal",
+        "value": "334",
+        "count": 24
+      },
+      {
+        "label": "Smart Greens",
+        "value": "456",
+        "count": 5
+      },
+      {
+        "label": "Steadfast Nutrition",
+        "value": "2134",
+        "count": 6
+      },
+      {
+        "label": "Sugarbear",
+        "value": "545",
+        "count": 1
+      },
+      {
+        "label": "Sukham",
+        "value": "2392",
+        "count": 2
+      },
+      {
+        "label": "Sunline",
+        "value": "3643",
+        "count": 1
+      },
+      {
+        "label": "SUNOVA",
+        "value": "3231",
+        "count": 4
+      },
+      {
+        "label": "SUPPLY6",
+        "value": "1058",
+        "count": 1
+      },
+      {
+        "label": "SUPPS",
+        "value": "3473",
+        "count": 2
+      },
+      {
+        "label": "Suprfit",
+        "value": "1391",
+        "count": 2
+      },
+      {
+        "label": "Swisse",
+        "value": "574",
+        "count": 26
+      },
+      {
+        "label": "SwisseMe",
+        "value": "597",
+        "count": 2
+      },
+      {
+        "label": "SwissLife Forever",
+        "value": "2393",
+        "count": 1
+      },
+      {
+        "label": "The Co Being",
+        "value": "1909",
+        "count": 3
+      },
+      {
+        "label": "The Good Bug",
+        "value": "1127",
+        "count": 14
+      },
+      {
+        "label": "Top Gummy",
+        "value": "1210",
+        "count": 1
+      },
+      {
+        "label": "TrueBasics",
+        "value": "341",
+        "count": 15
+      },
+      {
+        "label": "TruNativ",
+        "value": "558",
+        "count": 1
+      },
+      {
+        "label": "Unived",
+        "value": "553",
+        "count": 7
+      },
+      {
+        "label": "Vansaar",
+        "value": "2274",
+        "count": 1
+      },
+      {
+        "label": "Vitagoli",
+        "value": "3465",
+        "count": 1
+      },
+      {
+        "label": "Vitaminnica",
+        "value": "1708",
+        "count": 17
+      },
+      {
+        "label": "Vitamins & Me",
+        "value": "2261",
+        "count": 4
+      },
+      {
+        "label": "Vito Daily",
+        "value": "2240",
+        "count": 7
+      },
+      {
+        "label": "Wellbeing Nutrition",
+        "value": "347",
+        "count": 35
+      },
+      {
+        "label": "Wellman",
+        "value": "1299",
+        "count": 1
+      },
+      {
+        "label": "Wellwoman",
+        "value": "1300",
+        "count": 2
+      },
+      {
+        "label": "What's Up Wellness",
+        "value": "534",
+        "count": 11
+      },
+      {
+        "label": "WILD BUCK",
+        "value": "2427",
+        "count": 2
+      },
+      {
+        "label": "WISHNEW WELLNESS",
+        "value": "2689",
+        "count": 12
+      },
+      {
+        "label": "YourHappyLife",
+        "value": "3222",
+        "count": 2
+      },
+      {
+        "label": "ZEROHARM",
+        "value": "608",
+        "count": 18
+      },
+      {
+        "label": "Zingavita",
+        "value": "350",
+        "count": 2
+      }
+    ],
+    "position": 50
+  },
+  {
+    "attribute_code": "weight_quantity",
+    "count": 10,
+    "label": "Weight/Quantity",
+    "options": [
+      {
+        "label": "Under 500g",
+        "value": "2380",
+        "count": 52
+      },
+      {
+        "label": "500g - 999g",
+        "value": "2544",
+        "count": 3
+      },
+      {
+        "label": "1kg - 1.9kg",
+        "value": "2535",
+        "count": 7
+      },
+      {
+        "label": "Below 30 count",
+        "value": "2545",
+        "count": 41
+      },
+      {
+        "label": "30 count",
+        "value": "2540",
+        "count": 88
+      },
+      {
+        "label": "45 count",
+        "value": "2541",
+        "count": 1
+      },
+      {
+        "label": "60 count",
+        "value": "2542",
+        "count": 290
+      },
+      {
+        "label": "90 count & above",
+        "value": "2543",
+        "count": 110
+      },
+      {
+        "label": "90 & Above",
+        "value": "2389",
+        "count": 1
+      },
+      {
+        "label": "31-60",
+        "value": "2387",
+        "count": 1
+      }
+    ],
+    "position": 60
+  },
+  {
+    "attribute_code": "price",
+    "count": 5,
+    "label": "Price",
+    "options": [
+      {
+        "label": "\u20b90 - \u20b9500",
+        "value": "0_500",
+        "count": 544
+      },
+      {
+        "label": "\u20b9500 - \u20b91,000",
+        "value": "500_1000",
+        "count": 737
+      },
+      {
+        "label": "\u20b91,000 - \u20b91,500",
+        "value": "1000_1500",
+        "count": 236
+      },
+      {
+        "label": "\u20b91,500 - \u20b92,000",
+        "value": "1500_2000",
+        "count": 55
+      },
+      {
+        "label": "\u20b92,000 - \u20b93,799",
+        "value": "2000_3799",
+        "count": 41
+      }
+    ],
+    "position": 70
+  },
+  {
+    "attribute_code": "flavour",
+    "count": 68,
+    "label": "Flavour",
+    "options": [
+      {
+        "label": "Apple, Beetroot, carrot",
+        "value": "4234",
+        "count": 1
+      },
+      {
+        "label": "Assorted",
+        "value": "766",
+        "count": 1
+      },
+      {
+        "label": "Banana",
+        "value": "1154",
+        "count": 1
+      },
+      {
+        "label": "Berry",
+        "value": "1677",
+        "count": 4
+      },
+      {
+        "label": "Berry & Orange",
+        "value": "3774",
+        "count": 2
+      },
+      {
+        "label": "Berrylicious",
+        "value": "978",
+        "count": 1
+      },
+      {
+        "label": "Blackberry",
+        "value": "1523",
+        "count": 1
+      },
+      {
+        "label": "Blackcurrant",
+        "value": "2172",
+        "count": 1
+      },
+      {
+        "label": "Blueberry",
+        "value": "40",
+        "count": 1
+      },
+      {
+        "label": "Cafe Mocha",
+        "value": "779",
+        "count": 3
+      },
+      {
+        "label": "Caffeine",
+        "value": "3495",
+        "count": 1
+      },
+      {
+        "label": "Calming Chamomile Lavender",
+        "value": "3214",
+        "count": 1
+      },
+      {
+        "label": "Caramel",
+        "value": "1570",
+        "count": 1
+      },
+      {
+        "label": "Chamomile",
+        "value": "1543",
+        "count": 1
+      },
+      {
+        "label": "Chocolate",
+        "value": "1970",
+        "count": 9
+      },
+      {
+        "label": "Chocolate Bourbon Caffeinated",
+        "value": "4304",
+        "count": 1
+      },
+      {
+        "label": "Chocolate Cookie Cream",
+        "value": "1183",
+        "count": 1
+      },
+      {
+        "label": "Cinnamon",
+        "value": "1891",
+        "count": 1
+      },
+      {
+        "label": "Citrus",
+        "value": "1824",
+        "count": 1
+      },
+      {
+        "label": "Citrus Strawberry Natural",
+        "value": "2199",
+        "count": 2
+      },
+      {
+        "label": "Coconut & Matcha",
+        "value": "4096",
+        "count": 1
+      },
+      {
+        "label": "Coffee",
+        "value": "775",
+        "count": 1
+      },
+      {
+        "label": "Cola",
+        "value": "43",
+        "count": 1
+      },
+      {
+        "label": "Cranberry",
+        "value": "772",
+        "count": 3
+      },
+      {
+        "label": "Cranberry Cream",
+        "value": "2625",
+        "count": 1
+      },
+      {
+        "label": "Cranberry, Orange",
+        "value": "2761",
+        "count": 1
+      },
+      {
+        "label": "Cranberry, Strawberry",
+        "value": "2762",
+        "count": 2
+      },
+      {
+        "label": "Creamy Vanilla + Mixed Berry",
+        "value": "4144",
+        "count": 1
+      },
+      {
+        "label": "Double Chocolate",
+        "value": "774",
+        "count": 5
+      },
+      {
+        "label": "Fizzy Lemon",
+        "value": "1823",
+        "count": 1
+      },
+      {
+        "label": "German Rosehip",
+        "value": "1616",
+        "count": 1
+      },
+      {
+        "label": "Ginger",
+        "value": "1467",
+        "count": 3
+      },
+      {
+        "label": "Grape",
+        "value": "2025",
+        "count": 1
+      },
+      {
+        "label": "Green Apple",
+        "value": "45",
+        "count": 1
+      },
+      {
+        "label": "Green Apple Sorbet",
+        "value": "2695",
+        "count": 1
+      },
+      {
+        "label": "Green Apple, Orange",
+        "value": "2763",
+        "count": 1
+      },
+      {
+        "label": "Green Apple, Strawberry",
+        "value": "2764",
+        "count": 1
+      },
+      {
+        "label": "Green Mango",
+        "value": "1286",
+        "count": 1
+      },
+      {
+        "label": "Jaljeera",
+        "value": "1001",
+        "count": 1
+      },
+      {
+        "label": "Juicy Strawberry",
+        "value": "2048",
+        "count": 1
+      },
+      {
+        "label": "Lemon",
+        "value": "46",
+        "count": 14
+      },
+      {
+        "label": "Lemon Masala",
+        "value": "3587",
+        "count": 2
+      },
+      {
+        "label": "Lime & Lemon",
+        "value": "1612",
+        "count": 4
+      },
+      {
+        "label": "Mango",
+        "value": "47",
+        "count": 8
+      },
+      {
+        "label": "Mango Strawberry",
+        "value": "48",
+        "count": 1
+      },
+      {
+        "label": "Mentholyptus",
+        "value": "2607",
+        "count": 1
+      },
+      {
+        "label": "Mint",
+        "value": "1003",
+        "count": 2
+      },
+      {
+        "label": "Mixed Berry",
+        "value": "1617",
+        "count": 7
+      },
+      {
+        "label": "Mixed Berry & Fruits",
+        "value": "3775",
+        "count": 3
+      },
+      {
+        "label": "Mixed Berry & Orange",
+        "value": "3511",
+        "count": 4
+      },
+      {
+        "label": "Mixed Fruit",
+        "value": "1605",
+        "count": 6
+      },
+      {
+        "label": "Natural",
+        "value": "1474",
+        "count": 4
+      },
+      {
+        "label": "Natural Grape",
+        "value": "3660",
+        "count": 1
+      },
+      {
+        "label": "Natural Raspberry",
+        "value": "3661",
+        "count": 1
+      },
+      {
+        "label": "Orange",
+        "value": "50",
+        "count": 26
+      },
+      {
+        "label": "Orange Peppermint",
+        "value": "2659",
+        "count": 1
+      },
+      {
+        "label": "Orange, Strawberry",
+        "value": "2765",
+        "count": 4
+      },
+      {
+        "label": "Peppermint",
+        "value": "1448",
+        "count": 1
+      },
+      {
+        "label": "Raspberry",
+        "value": "1452",
+        "count": 3
+      },
+      {
+        "label": "Strawberry",
+        "value": "54",
+        "count": 14
+      },
+      {
+        "label": "Strawberry & Lemon",
+        "value": "1588",
+        "count": 2
+      },
+      {
+        "label": "Strawberry & Mango",
+        "value": "3771",
+        "count": 2
+      },
+      {
+        "label": "Strawberry Mint",
+        "value": "3832",
+        "count": 1
+      },
+      {
+        "label": "Strawberry Mix",
+        "value": "1587",
+        "count": 1
+      },
+      {
+        "label": "Unflavored",
+        "value": "880",
+        "count": 12
+      },
+      {
+        "label": "Unflavoured",
+        "value": "55",
+        "count": 263
+      },
+      {
+        "label": "Vanilla",
+        "value": "871",
+        "count": 5
+      },
+      {
+        "label": "Vanilla Delight",
+        "value": "1539",
+        "count": 1
+      }
+    ],
+    "position": 80
+  },
+  {
+    "attribute_code": "discount",
+    "count": 5,
+    "label": "Discount",
+    "options": [
+      {
+        "label": "10% Off or more",
+        "value": 10,
+        "count": 1312
+      },
+      {
+        "label": "25% Off or more",
+        "value": 25,
+        "count": 891
+      },
+      {
+        "label": "35% Off or more",
+        "value": 35,
+        "count": 537
+      },
+      {
+        "label": "50% Off or more",
+        "value": 50,
+        "count": 227
+      },
+      {
+        "label": "70% Off or more",
+        "value": 70,
+        "count": 23
+      }
+    ],
+    "position": 90
+  },
+  {
+    "attribute_code": "form",
+    "count": 34,
+    "label": "Form",
+    "options": [
+      {
+        "label": "Bar",
+        "value": "354",
+        "count": 1
+      },
+      {
+        "label": "Candy",
+        "value": "358",
+        "count": 1
+      },
+      {
+        "label": "Caplets",
+        "value": "4310",
+        "count": 1
+      },
+      {
+        "label": "Capsule",
+        "value": "359",
+        "count": 392
+      },
+      {
+        "label": "Capsules",
+        "value": "2780",
+        "count": 212
+      },
+      {
+        "label": "Chewable",
+        "value": "1208",
+        "count": 2
+      },
+      {
+        "label": "Chewable Capsule",
+        "value": "2529",
+        "count": 3
+      },
+      {
+        "label": "Chewable Tablet",
+        "value": "2238",
+        "count": 4
+      },
+      {
+        "label": "Chewables",
+        "value": "3951",
+        "count": 2
+      },
+      {
+        "label": "Drops",
+        "value": "2839",
+        "count": 1
+      },
+      {
+        "label": "Dry Fruits",
+        "value": "2481",
+        "count": 1
+      },
+      {
+        "label": "Effervescent",
+        "value": "1219",
+        "count": 14
+      },
+      {
+        "label": "Gel",
+        "value": "369",
+        "count": 2
+      },
+      {
+        "label": "Gels",
+        "value": "3647",
+        "count": 1
+      },
+      {
+        "label": "Granules",
+        "value": "371",
+        "count": 2
+      },
+      {
+        "label": "Gummies",
+        "value": "2279",
+        "count": 11
+      },
+      {
+        "label": "Gummy",
+        "value": "465",
+        "count": 90
+      },
+      {
+        "label": "Liquid",
+        "value": "375",
+        "count": 33
+      },
+      {
+        "label": "Lotion",
+        "value": "3623",
+        "count": 1
+      },
+      {
+        "label": "Oil",
+        "value": "999",
+        "count": 4
+      },
+      {
+        "label": "Paste",
+        "value": "380",
+        "count": 1
+      },
+      {
+        "label": "Powder",
+        "value": "382",
+        "count": 132
+      },
+      {
+        "label": "Powder + Gummies",
+        "value": "4143",
+        "count": 3
+      },
+      {
+        "label": "Seeds",
+        "value": "385",
+        "count": 2
+      },
+      {
+        "label": "Soft Gel",
+        "value": "386",
+        "count": 1
+      },
+      {
+        "label": "Soft Lozenge",
+        "value": "2528",
+        "count": 1
+      },
+      {
+        "label": "Softgel",
+        "value": "387",
+        "count": 57
+      },
+      {
+        "label": "Softgels",
+        "value": "1821",
+        "count": 9
+      },
+      {
+        "label": "Spray",
+        "value": "907",
+        "count": 4
+      },
+      {
+        "label": "Strip",
+        "value": "2827",
+        "count": 29
+      },
+      {
+        "label": "Strips",
+        "value": "390",
+        "count": 2
+      },
+      {
+        "label": "Tablet",
+        "value": "391",
+        "count": 417
+      },
+      {
+        "label": "Tablet (Mouth Dissolving)",
+        "value": "4395",
+        "count": 1
+      },
+      {
+        "label": "Tablets",
+        "value": "2229",
+        "count": 103
+      }
+    ],
+    "position": 100
+  },
+  {
+    "attribute_code": "gender",
+    "count": 3,
+    "label": "Gender",
+    "options": [
+      {
+        "label": "Unisex",
+        "value": "2390",
+        "count": 417
+      },
+      {
+        "label": "Female",
+        "value": "438",
+        "count": 26
+      },
+      {
+        "label": "Male",
+        "value": "437",
+        "count": 19
+      }
+    ],
+    "position": 110
+  },
+  {
+    "attribute_code": "diet_type",
+    "count": 10,
+    "label": "Diet Type",
+    "options": [
+      {
+        "value": "2330",
+        "label": "Gluten Free",
+        "count": 36
+      },
+      {
+        "value": "2333",
+        "label": "High fiber",
+        "count": 3
+      },
+      {
+        "value": "2334",
+        "label": "High protein",
+        "count": 1
+      },
+      {
+        "value": "2335",
+        "label": "Jain",
+        "count": 143
+      },
+      {
+        "value": "2331",
+        "label": "Keto",
+        "count": 3
+      },
+      {
+        "value": "2329",
+        "label": "Non Veg",
+        "count": 123
+      },
+      {
+        "value": "2548",
+        "label": "Plant Based",
+        "count": 4
+      },
+      {
+        "value": "2534",
+        "label": "Sugar free",
+        "count": 1
+      },
+      {
+        "value": "2328",
+        "label": "Veg",
+        "count": 593
+      },
+      {
+        "value": "2547",
+        "label": "Vegan",
+        "count": 60
+      }
+    ],
+    "position": 120
+  },
+  {
+    "attribute_code": "pack_size",
+    "count": 4,
+    "label": "Pack Size",
+    "options": [
+      {
+        "label": "Pack of 1",
+        "value": "2355",
+        "count": 440
+      },
+      {
+        "label": "Pack of 2",
+        "value": "2356",
+        "count": 69
+      },
+      {
+        "label": "Pack of 3",
+        "value": "2357",
+        "count": 9
+      },
+      {
+        "label": "Pack of 4 & above",
+        "value": "2358",
+        "count": 2
+      }
+    ],
+    "position": 130
+  },
+  {
+    "attribute_code": "rating",
+    "count": 1,
+    "label": "Customer Rating",
+    "options": [
+      {
+        "label": "4\u2605 & above",
+        "value": 4,
+        "count": 553,
+        "selected": false
+      }
+    ],
+    "position": 999
+  }
+]

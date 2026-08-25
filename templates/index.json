@@ -555,7 +555,7 @@
           "type": "item",
           "settings": {
             "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
-            "title": "Flat \u20b950 Off",
+            "title": "Flat ₹50 Off",
             "link": ""
           }
         },
@@ -563,7 +563,7 @@
           "type": "item",
           "settings": {
             "image_url": "https://cdn.hyugalife.com/banner/feature/d-WEB_copycoupan_4.png",
-            "title": "Flat \u20b950 Off",
+            "title": "Flat ₹50 Off",
             "link": ""
           }
         },
@@ -619,7 +619,7 @@
             "icon_preset": "shipping",
             "icon_url": "",
             "title": "Free shipping",
-            "text": "Get free delivery on orders above \u20b9399!"
+            "text": "Get free delivery on orders above ₹399!"
           }
         },
         "genuine": {
@@ -847,7 +847,7 @@
             "title": "Carbamide Forte Chelated Magnesium Glycinate | 120 Veg",
             "qty": "165g",
             "price": "699",
-            "unit_price": "\u20b913.6/count",
+            "unit_price": "₹13.6/count",
             "compare": "999",
             "off": "30",
             "rating": "4.7",
@@ -865,7 +865,7 @@
             "title": "Carbamide Forte Japanese Reduced L Glutathione 500mg",
             "qty": "60 Tablets",
             "price": "816",
-            "unit_price": "\u20b913.6/count",
+            "unit_price": "₹13.6/count",
             "compare": "1249",
             "off": "35",
             "rating": "4.7",
@@ -1330,7 +1330,7 @@
             "title": "Carbamide Forte Chelated Magnesium Glycinate | 120 Veg",
             "qty": "165g",
             "price": "699",
-            "unit_price": "\u20b913.6/count",
+            "unit_price": "₹13.6/count",
             "compare": "999",
             "off": "30",
             "rating": "4.7",
@@ -1348,7 +1348,7 @@
             "title": "Carbamide Forte Japanese Reduced L Glutathione 500mg",
             "qty": "60 Tablets",
             "price": "816",
-            "unit_price": "\u20b913.6/count",
+            "unit_price": "₹13.6/count",
             "compare": "1249",
             "off": "35",
             "rating": "4.7",
@@ -1618,7 +1618,7 @@
             "title": "Carbamide Forte Chelated Magnesium Glycinate | 120 Veg",
             "qty": "165g",
             "price": "699",
-            "unit_price": "\u20b913.6/count",
+            "unit_price": "₹13.6/count",
             "compare": "999",
             "off": "30",
             "rating": "4.7",
@@ -1636,7 +1636,7 @@
             "title": "Carbamide Forte Japanese Reduced L Glutathione 500mg",
             "qty": "60 Tablets",
             "price": "816",
-            "unit_price": "\u20b913.6/count",
+            "unit_price": "₹13.6/count",
             "compare": "1249",
             "off": "35",
             "rating": "4.7",
@@ -2148,20 +2148,6 @@
         "blog": "",
         "limit": 8
       }
-    },
-    "app_banner": {
-      "type": "hyuga-app-banner",
-      "settings": {
-        "bg_from": "#FFE8C8",
-        "bg_to": "#FFF6E8",
-        "phone_image_url": "",
-        "heading": "Exciting App offers!",
-        "text": "<p>Get <strong>10% OFF</strong> your first order + <strong>1% cashback</strong> on app!</p>",
-        "play_link": "",
-        "play_badge_url": "",
-        "apple_link": "",
-        "apple_badge_url": ""
-      }
     }
   },
   "order": [
@@ -2189,7 +2175,6 @@
     "hyuga_products_XHnt3h",
     "hyuga_hero_ckr9Mb",
     "hyuga_products_AAhJqU",
-    "blog",
-    "app_banner"
+    "blog"
   ]
 }

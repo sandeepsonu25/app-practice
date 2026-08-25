@@ -1,0 +1,524 @@
+{{ 'hyuga-home.css' | asset_url | stylesheet_tag }}
+
+{%- comment -%}
+  Hardcoded Health Supplements PLP clone of
+  https://hyugalife.com/product-category/health-supplements
+{%- endcomment -%}
+
+<div class="hyuga-app hyuga-plp">
+  <div class="hyuga-wrap">
+    <nav class="hyuga-plp__crumb" aria-label="Breadcrumb">
+      <span>Home</span>
+      <span aria-hidden="true">/</span>
+      <strong>Health Supplements</strong>
+    </nav>
+
+    <div class="hyuga-plp__top">
+      <div>
+        <p class="hyuga-plp__eyebrow">All Products</p>
+        <h1 class="hyuga-plp__title">health supplements</h1>
+        <p class="hyuga-plp__count">Showing <b>1,660</b> results</p>
+      </div>
+      <div class="hyuga-plp__sort">
+        <label for="hyuga-plp-sort">Sort by</label>
+        <select id="hyuga-plp-sort" disabled>
+          <option selected>Recommended</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Discount</option>
+          <option>Rating</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="hyuga-plp__quick" aria-label="Quick filters">
+      <button type="button" class="hyuga-plp__chip" disabled>Today Deals</button>
+      <button type="button" class="hyuga-plp__chip" disabled>Heavy Metals Tested</button>
+      <button type="button" class="hyuga-plp__chip" disabled>Alpino</button>
+      <button type="button" class="hyuga-plp__chip" disabled>Hyuga</button>
+      <button type="button" class="hyuga-plp__chip" disabled>Hyuga One</button>
+      <button type="button" class="hyuga-plp__chip" disabled>GNC</button>
+      <button type="button" class="hyuga-plp__chip" disabled>MuscleBlaze</button>
+    </div>
+
+    <div class="hyuga-plp__layout">
+      <aside class="hyuga-plp__sidebar">
+        <div class="hyuga-plp__sidebar-head">
+          <h2 class="hyuga-plp__sidebar-title">Filters</h2>
+        </div>
+        
+      <details class="hyuga-plp__filter" open>
+        <summary>Narrow By Category</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Calcium supplements</span> <em>(78)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Co Q10</span> <em>(22)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Glucosamine</span> <em>(19)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Health Supplements Combos</span> <em>(98)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Iron</span> <em>(32)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Lutein (Eye Care)</span> <em>(17)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Magnesium</span> <em>(104)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Melatonin (Sleep care)</span> <em>(101)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Multivitamins</span> <em>(259)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Omega 3 &amp; Fish Oil</span> <em>(177)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Other Health Supplements</span> <em>(509)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Pre &amp; Probiotics (Gut Health)</span> <em>(158)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Vitamin B</span> <em>(40)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Vitamin C (Immunity)</span> <em>(60)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Vitamin D3</span> <em>(70)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Zinc supplements</span> <em>(35)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter" open>
+        <summary>Hyugalife Assured</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Heavy Metals Tested</span> <em>(29)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Program &amp; Offers</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Bestseller</span> <em>(133)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Big Brand Rush</span> <em>(25)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Featured</span> <em>(16)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Deal of the day</span> <em>(4)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Lowest ₹ In India</span> <em>(1)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Concern</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Beauty</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Bones &amp; Joints</span> <em>(75)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Daily Vitamins</span> <em>(61)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Diabetes</span> <em>(3)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Gut Health</span> <em>(33)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Heart Care</span> <em>(78)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Hydration &amp; Energy</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Immunity</span> <em>(38)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Immunity Boosters</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Kidney &amp; UTI</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Liver Care</span> <em>(3)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Muscle Gain</span> <em>(4)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Muscle Repair / Recovery</span> <em>(3)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Pain Management</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Sexual Wellness</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Skin</span> <em>(7)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Sleep, Stress &amp; Mental Wellness</span> <em>(41)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Weight Management</span> <em>(8)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Brand</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>AADAR</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Ace Blend</span> <em>(8)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Alpino</span> <em>(6)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>andMe</span> <em>(11)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>AS-IT-IS Nutrition</span> <em>(13)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Baidyanath Jhansi</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Baidyanath Nagpur</span> <em>(3)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>BBETTER</span> <em>(10)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>BEAST LIFE</span> <em>(4)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Best Naturals</span> <em>(10)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Better Nutrition</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Biovitalia Organics</span> <em>(16)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Blubein</span> <em>(11)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>BodyFirst</span> <em>(14)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Bold Care</span> <em>(5)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Boldfit</span> <em>(21)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>BOLT</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>BonAiyu Health</span> <em>(2)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Price</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>₹0 - ₹500</span> <em>(544)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>₹500 - ₹1,000</span> <em>(737)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>₹1,000 - ₹1,500</span> <em>(236)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>₹1,500 - ₹2,000</span> <em>(55)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>₹2,000 - ₹3,799</span> <em>(41)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Discount</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>10% Off or more</span> <em>(1312)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>25% Off or more</span> <em>(891)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>35% Off or more</span> <em>(537)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>50% Off or more</span> <em>(227)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>70% Off or more</span> <em>(23)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Form</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Bar</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Candy</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Caplets</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Capsule</span> <em>(392)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Capsules</span> <em>(212)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Chewable</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Chewable Capsule</span> <em>(3)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Chewable Tablet</span> <em>(4)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Chewables</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Drops</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Dry Fruits</span> <em>(1)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Effervescent</span> <em>(14)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Gel</span> <em>(2)</em></label><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>Gels</span> <em>(1)</em></label></div>
+      </details>
+      <details class="hyuga-plp__filter">
+        <summary>Customer Rating</summary>
+        <div class="hyuga-plp__filter-body"><label class="hyuga-plp__check"><input type="checkbox" disabled> <span>4★ &amp; above</span> <em>(553)</em></label></div>
+      </details>
+      </aside>
+
+      <div class="hyuga-plp__main">
+        <div class="hyuga-plp__grid">
+          
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/o/m/omega-3_front.png" alt="Hyuga One Omega-3 Triple Strength Fish Oil | 1250 mg per Softgel | EPA 450 mg &amp; DHA 300 mg" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(12)</small></div>
+                <div class="hyuga-plp-card__brand">Hyuga One</div>
+                <h3 class="hyuga-plp-card__title">Hyuga One Omega-3 Triple Strength Fish Oil | 1250 mg per Softgel | EPA 450 mg &amp; DHA 300 mg</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹549</b>
+                  <s>₹599</s>
+                  <span class="hyuga-plp-card__off">8% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvme99m2_1_.png" alt="NATURALTEIN Omega 3 Triple Strength 60" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.8<small>(180)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">NATURALTEIN Omega 3 Triple Strength 60</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹959</b>
+                  <s>₹2,000</s>
+                  <span class="hyuga-plp-card__off">52% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/f/r/front_31.jpg" alt="MuscleBlaze MB Fish Oil Gold | 60 Capsules | Triple Strength | Muscle" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(338)</small></div>
+                <div class="hyuga-plp-card__brand">MuscleBlaze MB</div>
+                <h3 class="hyuga-plp-card__title">MuscleBlaze MB Fish Oil Gold | 60 Capsules | Triple Strength | Muscle</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹1,119</b>
+                  <s>₹1,449</s>
+                  <span class="hyuga-plp-card__off">23% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 3 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/1/_/1_54.png" alt="Neuherbs Deep Sea Omega 3 Fish Oil 2500mg - 60 Capsules | For Heart, Brain, Muscles, Joint" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(71)</small></div>
+                <div class="hyuga-plp-card__brand">Neuherbs</div>
+                <h3 class="hyuga-plp-card__title">Neuherbs Deep Sea Omega 3 Fish Oil 2500mg - 60 Capsules | For Heart, Brain, Muscles, Joint</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹899</b>
+                  <s>₹999</s>
+                  <span class="hyuga-plp-card__off">10% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 3 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvyv88l2_01_2.jpg" alt="Carbamide Forte Chelated Magnesium Glycinate 2000mg Per Serving Supplement" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.7<small>(385)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">Carbamide Forte Chelated Magnesium Glycinate 2000mg Per Serving Supplement</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹699</b>
+                  <s>₹999</s>
+                  <span class="hyuga-plp-card__off">30% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hsal75b6_5.jpg" alt="hk vitals Fish Oil and Multivitamin (60 Tablets Each) Combo Pack | 1000mg Omega 3 with 180" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(1)</small></div>
+                <div class="hyuga-plp-card__brand">HK Vitals</div>
+                <h3 class="hyuga-plp-card__title">hk vitals Fish Oil and Multivitamin (60 Tablets Each) Combo Pack | 1000mg Omega 3 with 180</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹719</b>
+                  <s>₹769</s>
+                  <span class="hyuga-plp-card__off">7% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 6 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/9/0/90200035_2_.png" alt="GNC Triple Strength Fish Oil Mini Omega 3 Capsules for Men &amp; Women | 900mg EPA &amp; DHA | Imp" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.6<small>(354)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">GNC Triple Strength Fish Oil Mini Omega 3 Capsules for Men &amp; Women | 900mg EPA &amp; DHA | Imp</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹699</b>
+                  <s>₹1,099</s>
+                  <span class="hyuga-plp-card__off">36% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvbm42p7_8__1.jpg" alt="Ace Blend Outshine Omega 3 Fish Oil Capsules | 1650 Mg Fatty Acids | 2 capsules for Quadru" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.7<small>(7)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">Ace Blend Outshine Omega 3 Fish Oil Capsules | 1650 Mg Fatty Acids | 2 capsules for Quadru</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹2,505</b>
+                  <s>₹4,197</s>
+                  <span class="hyuga-plp-card__off">40% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvyz95e1_1.jpg" alt="Good Monk Healthy 50 + Nutrition Mix : Clinically Designed to Improve Energy, Bone &amp; Gut H" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(0)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">Good Monk Healthy 50 + Nutrition Mix : Clinically Designed to Improve Energy, Bone &amp; Gut H</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹349</b>
+                  <s>₹420</s>
+                  <span class="hyuga-plp-card__off">17% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hsbi56v4_1__1_1.jpg" alt="Dr. Morepen Omega 3 Deep Sea Fish Oil Triple Strength | 60 Softgels | Brain | Joints" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(222)</small></div>
+                <div class="hyuga-plp-card__brand">Dr. Morepen</div>
+                <h3 class="hyuga-plp-card__title">Dr. Morepen Omega 3 Deep Sea Fish Oil Triple Strength | 60 Softgels | Brain | Joints</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹663</b>
+                  <s>₹975</s>
+                  <span class="hyuga-plp-card__off">32% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 3 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/1/_/1_134.jpg" alt="Vlado's Himalayan Organics Calcium Magnesium Zinc Vitamin D3 &amp; B12 120 Vegetarian Tablets" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(312)</small></div>
+                <div class="hyuga-plp-card__brand">Himalayan Organics</div>
+                <h3 class="hyuga-plp-card__title">Vlado's Himalayan Organics Calcium Magnesium Zinc Vitamin D3 &amp; B12 120 Vegetarian Tablets</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹674</b>
+                  <s>₹896</s>
+                  <span class="hyuga-plp-card__off">25% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hsah30m3_1__1.jpg" alt="TrueBasics Omega 3 Fish Oil | Triple Strength with 1150mg Omega, 525mg EPA &amp; 375mg DHA | F" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.6<small>(266)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">TrueBasics Omega 3 Fish Oil | Triple Strength with 1150mg Omega, 525mg EPA &amp; 375mg DHA | F</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹469</b>
+                  
+                  
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/h/hhmag120400_1__1.jpg" alt="HealthyHey Nutrition High Absorption Magnesium Glycinate, 550mg" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(831)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">HealthyHey Nutrition High Absorption Magnesium Glycinate, 550mg</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹632</b>
+                  <s>₹1,069</s>
+                  <span class="hyuga-plp-card__off">41% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/7/4/748927070446_1.jpg" alt="Optimum Nutrition (ON) Multivitamin for MEN 26 Vitamins &amp; Minerals, Amino Acids &amp; Anti Oxi" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(4)</small></div>
+                <div class="hyuga-plp-card__brand">Optimum Nutrition ON</div>
+                <h3 class="hyuga-plp-card__title">Optimum Nutrition (ON) Multivitamin for MEN 26 Vitamins &amp; Minerals, Amino Acids &amp; Anti Oxi</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹619</b>
+                  <s>₹839</s>
+                  <span class="hyuga-plp-card__off">26% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 3 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvsk63s2_5_.jpg" alt="Miduty Vitamin B12 Methyl Folate Fast Absorption Methylcoblamin Vitamin B6" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 5.0<small>(1)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">Miduty Vitamin B12 Methyl Folate Fast Absorption Methylcoblamin Vitamin B6</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹746</b>
+                  
+                  
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/4/1/411200910022004_1_2.png" alt="MyFitFuel Triple Strength Omega 3 Fish Oil With Vitamins, 1200mg (540 EPA 360 DHA) Per Sof" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.6<small>(109)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">MyFitFuel Triple Strength Omega 3 Fish Oil With Vitamins, 1200mg (540 EPA 360 DHA) Per Sof</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹512</b>
+                  <s>₹809</s>
+                  <span class="hyuga-plp-card__off">37% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/9/0/90200084_1_.jpg" alt="GNC Mega Men Sport Multivitamin for Men | Boosts Muscle Performance | Antioxidant Rich | S" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.6<small>(225)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">GNC Mega Men Sport Multivitamin for Men | Boosts Muscle Performance | Antioxidant Rich | S</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹749</b>
+                  <s>₹1,065</s>
+                  <span class="hyuga-plp-card__off">30% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvsr17g1_1_.jpg" alt="NATURALTEIN Omega 3 Triple Strength" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.8<small>(180)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">NATURALTEIN Omega 3 Triple Strength</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹579</b>
+                  <s>₹1,000</s>
+                  <span class="hyuga-plp-card__off">42% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hsop15b4_1_1_1.jpg" alt="Muscletech Platinum Multivitamin Unflavoured 60 Units 180g" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 5.0<small>(15)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">Muscletech Platinum Multivitamin Unflavoured 60 Units 180g</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹799</b>
+                  <s>₹1,419</s>
+                  <span class="hyuga-plp-card__off">44% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hstd69g3_1_.png" alt="Briyo Briyo Vitamin D3 2000 IU 90 Softgels For Bone Health, Muscle Function and Immune Sup" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(7)</small></div>
+                <div class="hyuga-plp-card__brand">Briyo supplements</div>
+                <h3 class="hyuga-plp-card__title">Briyo Briyo Vitamin D3 2000 IU 90 Softgels For Bone Health, Muscle Function and Immune Sup</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹376</b>
+                  <s>₹495</s>
+                  <span class="hyuga-plp-card__off">24% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 6 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hstw99x6_2_1.jpg" alt="INLIFE Magnesium Glycinate with Zinc Picolinate, Chelated Bisglycinate, Muscle Sleep &amp; Ner" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(139)</small></div>
+                <div class="hyuga-plp-card__brand">INLIFE</div>
+                <h3 class="hyuga-plp-card__title">INLIFE Magnesium Glycinate with Zinc Picolinate, Chelated Bisglycinate, Muscle Sleep &amp; Ner</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹699</b>
+                  <s>₹1,069</s>
+                  <span class="hyuga-plp-card__off">35% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 6 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hspu37x1_1_.jpg" alt="NAKPRO Chelated Magnesium Bisglycinate Supplement 2000mg Per Serving, 60 Veg Tablets | Mag" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(16)</small></div>
+                <div class="hyuga-plp-card__brand">NAKPRO</div>
+                <h3 class="hyuga-plp-card__title">NAKPRO Chelated Magnesium Bisglycinate Supplement 2000mg Per Serving, 60 Veg Tablets | Mag</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹299</b>
+                  <s>₹620</s>
+                  <span class="hyuga-plp-card__off">52% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 4 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/v/hvlg14y7_1_.jpg" alt="OSOAA Vitamin D3 K2 MK7 Tablets Plant Based Lichen Source 600 IU Vitamin D Bone Health Cal" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 5.0<small>(2)</small></div>
+                
+                <h3 class="hyuga-plp-card__title">OSOAA Vitamin D3 K2 MK7 Tablets Plant Based Lichen Source 600 IU Vitamin D Bone Health Cal</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹389</b>
+                  <s>₹699</s>
+                  <span class="hyuga-plp-card__off">44% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it by Tomorrow</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+            <article class="hyuga-plp-card">
+              <div class="hyuga-plp-card__media">
+                <img src="https://cdn.hyugalife.com/catalog/product/h/s/hsvd62l7_1_.jpg" alt="Briyo CoenzymeQ10 + Omega 3 150 mg Omega 3 + 100 mg Omegas 3 with Lycopene and Selenium fo" width="220" height="220" loading="lazy">
+              </div>
+              <div class="hyuga-plp-card__body">
+                <div class="hyuga-plp-card__rating"><span>★</span> 4.5<small>(2)</small></div>
+                <div class="hyuga-plp-card__brand">Briyo supplements</div>
+                <h3 class="hyuga-plp-card__title">Briyo CoenzymeQ10 + Omega 3 150 mg Omega 3 + 100 mg Omegas 3 with Lycopene and Selenium fo</h3>
+                <div class="hyuga-plp-card__price">
+                  <b>₹695</b>
+                  <s>₹979</s>
+                  <span class="hyuga-plp-card__off">29% OFF</span>
+                </div>
+                <p class="hyuga-plp-card__ship">Get it in 6 days</p>
+                <span class="hyuga-plp-card__cta">Add to cart</span>
+              </div>
+            </article>
+        </div>
+
+        <nav class="hyuga-plp__pager" aria-label="Pagination">
+          <span class="hyuga-plp__pager-btn is-disabled" aria-disabled="true">«</span>
+          <span class="hyuga-plp__pager-btn is-active">1</span>
+          <span class="hyuga-plp__pager-btn">2</span>
+          <span class="hyuga-plp__pager-btn">3</span>
+          <span class="hyuga-plp__pager-ell">…</span>
+          <span class="hyuga-plp__pager-btn">69</span>
+          <span class="hyuga-plp__pager-btn">70</span>
+          <span class="hyuga-plp__pager-btn">»</span>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hyuga PLP  Supplements",
+  "tag": "section",
+  "class": "hyuga-section-root",
+  "settings": [],
+  "presets": [{ "name": "Hyuga PLP Health Supplements" }]
+}
+{% endschema %}

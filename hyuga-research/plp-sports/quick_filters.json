@@ -1,0 +1,294 @@
+[
+  {
+    "key": "today_deals",
+    "header": "Today Deals",
+    "type": "single_select",
+    "value": [
+      {
+        "id": "1",
+        "label": "Today Deals"
+      }
+    ],
+    "sort_order": "0"
+  },
+  {
+    "key": "hyugalife_program",
+    "header": "Hyugalife Assured",
+    "type": "single_select",
+    "value": [
+      {
+        "id": "2378",
+        "label": "H Tested"
+      },
+      {
+        "id": "2379",
+        "label": "Heavy Metals Tested"
+      }
+    ],
+    "sort_order": "1"
+  },
+  {
+    "key": "brand",
+    "header": "Top Brands",
+    "sort_order": "2",
+    "type": "multi_select",
+    "value": [
+      {
+        "id": "486",
+        "label": "Alpino"
+      },
+      {
+        "id": "2253",
+        "label": "Avvatar"
+      },
+      {
+        "id": "3239",
+        "label": "Hyuga"
+      },
+      {
+        "id": "4065",
+        "label": "Hyuga One"
+      },
+      {
+        "id": "1053",
+        "label": "GNC"
+      },
+      {
+        "id": "1951",
+        "label": "HEALTHFARM"
+      },
+      {
+        "id": "2042",
+        "label": "MuscleTech"
+      },
+      {
+        "id": "2138",
+        "label": "MuscleBlaze MB"
+      },
+      {
+        "id": "328",
+        "label": "OZiva"
+      },
+      {
+        "id": "3501",
+        "label": "NAKPRO"
+      },
+      {
+        "id": "330",
+        "label": "Pintola"
+      },
+      {
+        "id": "3471",
+        "label": "BEAST LIFE"
+      },
+      {
+        "id": "1305",
+        "label": "The Whole Truth"
+      }
+    ]
+  },
+  {
+    "key": "flavour",
+    "header": "Flavour",
+    "sort_order": "3",
+    "type": "multi_select",
+    "value": [
+      {
+        "id": "55",
+        "label": "Unflavoured"
+      },
+      {
+        "id": "1970",
+        "label": "Chocolate"
+      },
+      {
+        "id": "47",
+        "label": "Mango"
+      },
+      {
+        "id": "54",
+        "label": "Strawberry"
+      },
+      {
+        "id": "50",
+        "label": "Orange"
+      },
+      {
+        "id": "766",
+        "label": "Assorted"
+      },
+      {
+        "id": "871",
+        "label": "Vanilla"
+      },
+      {
+        "id": "1017",
+        "label": "Rich Chocolate"
+      },
+      {
+        "id": "1054",
+        "label": "Double Rich Chocolate"
+      },
+      {
+        "id": "56",
+        "label": "Watermelon"
+      }
+    ]
+  },
+  {
+    "key": "form",
+    "header": "Form",
+    "sort_order": "4",
+    "type": "multi_select",
+    "value": [
+      {
+        "id": "382",
+        "label": "Powder"
+      },
+      {
+        "id": "354",
+        "label": "Bar"
+      },
+      {
+        "id": "359",
+        "label": "Capsule"
+      },
+      {
+        "id": "391",
+        "label": "Tablet"
+      },
+      {
+        "id": "375",
+        "label": "Liquid"
+      },
+      {
+        "id": "2780",
+        "label": "Capsules"
+      },
+      {
+        "id": "380",
+        "label": "Paste"
+      },
+      {
+        "id": "2229",
+        "label": "Tablets"
+      },
+      {
+        "id": "389",
+        "label": "Solid"
+      },
+      {
+        "id": "2056",
+        "label": "Spread"
+      }
+    ]
+  },
+  {
+    "key": "price",
+    "header": "Price",
+    "sort_order": "5",
+    "type": "multi_select",
+    "value": [
+      {
+        "id": "0_3500",
+        "label": "\u20b90 - \u20b93,500"
+      },
+      {
+        "id": "3500_7000",
+        "label": "\u20b93,500 - \u20b97,000"
+      },
+      {
+        "id": "7000_10500",
+        "label": "\u20b97,000 - \u20b910,500"
+      },
+      {
+        "id": "10500_14000",
+        "label": "\u20b910,500 - \u20b914,000"
+      },
+      {
+        "id": "14000_19963",
+        "label": "\u20b914,000 - \u20b919,963"
+      }
+    ]
+  },
+  {
+    "key": "discount",
+    "header": "Discount",
+    "sort_order": "6",
+    "type": "multi_select",
+    "value": [
+      {
+        "id": 10,
+        "label": "10% Off or more"
+      },
+      {
+        "id": 25,
+        "label": "25% Off or more"
+      },
+      {
+        "id": 35,
+        "label": "35% Off or more"
+      },
+      {
+        "id": 50,
+        "label": "50% Off or more"
+      },
+      {
+        "id": 70,
+        "label": "70% Off or more"
+      }
+    ]
+  },
+  {
+    "key": "tags",
+    "header": "Top deals",
+    "sort_order": "7",
+    "type": "multi_select",
+    "value": [
+      {
+        "id": "3739",
+        "label": "Bestseller"
+      },
+      {
+        "id": "3744",
+        "label": "Big Brand Rush"
+      },
+      {
+        "id": "3738",
+        "label": "Featured"
+      },
+      {
+        "id": "3741",
+        "label": "Deal of the day"
+      },
+      {
+        "id": "4211",
+        "label": "Lowest \u20b9 In India"
+      }
+    ]
+  },
+  {
+    "key": "tags",
+    "header": "Bestseller",
+    "sort_order": "8",
+    "type": "single_select",
+    "value": [
+      {
+        "id": "3739",
+        "label": "Bestseller"
+      }
+    ]
+  },
+  {
+    "key": "rating",
+    "header": "Ratings",
+    "sort_order": "9",
+    "type": "single_select",
+    "value": [
+      {
+        "id": "4",
+        "label": "4\u2605 & above"
+      }
+    ]
+  }
+]
