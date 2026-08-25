@@ -1883,6 +1883,74 @@
         "limit": 8
       }
     },
+    "hyuga_hero_ckr9Mb": {
+      "type": "hyuga-hero",
+      "blocks": {
+        "slide_Wg6b3X": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar-1440x360_2x_11.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar540x270_2x_4.png",
+            "alt": "Home Page Sale banner 3",
+            "link": ""
+          }
+        },
+        "slide_UD4w6N": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BIO-D-WEBBIO_1__2.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BIO-M-WEBBIO_1__2.png",
+            "alt": "Home Page Banner 1",
+            "link": ""
+          }
+        },
+        "slide_6QGdVC": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/TWT_Web_1__3.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/TWT_Mweb_1__3.jpg",
+            "alt": "Home Page Banner 3",
+            "link": ""
+          }
+        },
+        "slide_Bf8xnQ": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/Web_Banner_2_30.png",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/Mweb_Banner_28.png",
+            "alt": "Home Page Banner 4",
+            "link": ""
+          }
+        },
+        "slide_Dcnbtc": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/1440px_x_360px_3x_21.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/540px_x_270px_3x_21.jpg",
+            "alt": "Home Page Banner 5",
+            "link": ""
+          }
+        },
+        "slide_h3H4dV": {
+          "type": "slide",
+          "settings": {
+            "desktop_url": "https://cdn.hyugalife.com/banner/feature/All_products.jpg",
+            "mobile_url": "https://cdn.hyugalife.com/banner/feature/All_products-MView.png",
+            "alt": "Home Page Banner 6",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_Wg6b3X",
+        "slide_UD4w6N",
+        "slide_6QGdVC",
+        "slide_Bf8xnQ",
+        "slide_Dcnbtc",
+        "slide_h3H4dV"
+      ],
+      "settings": {}
+    },
     "hyuga_products_AAhJqU": {
       "type": "hyuga-products",
       "blocks": {
@@ -2001,74 +2069,6 @@
         "limit": 8
       }
     },
-    "hyuga_hero_ckr9Mb": {
-      "type": "hyuga-hero",
-      "blocks": {
-        "slide_Wg6b3X": {
-          "type": "slide",
-          "settings": {
-            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar-1440x360_2x_11.png",
-            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BBR-Avvatar540x270_2x_4.png",
-            "alt": "Home Page Sale banner 3",
-            "link": ""
-          }
-        },
-        "slide_UD4w6N": {
-          "type": "slide",
-          "settings": {
-            "desktop_url": "https://cdn.hyugalife.com/banner/feature/BIO-D-WEBBIO_1__2.png",
-            "mobile_url": "https://cdn.hyugalife.com/banner/feature/BIO-M-WEBBIO_1__2.png",
-            "alt": "Home Page Banner 1",
-            "link": ""
-          }
-        },
-        "slide_6QGdVC": {
-          "type": "slide",
-          "settings": {
-            "desktop_url": "https://cdn.hyugalife.com/banner/feature/TWT_Web_1__3.jpg",
-            "mobile_url": "https://cdn.hyugalife.com/banner/feature/TWT_Mweb_1__3.jpg",
-            "alt": "Home Page Banner 3",
-            "link": ""
-          }
-        },
-        "slide_Bf8xnQ": {
-          "type": "slide",
-          "settings": {
-            "desktop_url": "https://cdn.hyugalife.com/banner/feature/Web_Banner_2_30.png",
-            "mobile_url": "https://cdn.hyugalife.com/banner/feature/Mweb_Banner_28.png",
-            "alt": "Home Page Banner 4",
-            "link": ""
-          }
-        },
-        "slide_Dcnbtc": {
-          "type": "slide",
-          "settings": {
-            "desktop_url": "https://cdn.hyugalife.com/banner/feature/1440px_x_360px_3x_21.jpg",
-            "mobile_url": "https://cdn.hyugalife.com/banner/feature/540px_x_270px_3x_21.jpg",
-            "alt": "Home Page Banner 5",
-            "link": ""
-          }
-        },
-        "slide_h3H4dV": {
-          "type": "slide",
-          "settings": {
-            "desktop_url": "https://cdn.hyugalife.com/banner/feature/All_products.jpg",
-            "mobile_url": "https://cdn.hyugalife.com/banner/feature/All_products-MView.png",
-            "alt": "Home Page Banner 6",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_Wg6b3X",
-        "slide_UD4w6N",
-        "slide_6QGdVC",
-        "slide_Bf8xnQ",
-        "slide_Dcnbtc",
-        "slide_h3H4dV"
-      ],
-      "settings": {}
-    },
     "blog": {
       "type": "hyuga-blog-rail",
       "blocks": {
@@ -2102,16 +2102,6 @@
             "link": ""
           }
         },
-        "a4": {
-          "type": "article",
-          "settings": {
-            "image_url": "https://cdn.hyugalife.com/banner/feature/Biotin_09_1.png",
-            "title": "6 Best Hair Vitamins for...",
-            "excerpt": "Explore the top hair vitamins that promote healthy, vibrant locks. Di...",
-            "author": "Seema Beniwal",
-            "link": ""
-          }
-        },
         "a5": {
           "type": "article",
           "settings": {
@@ -2121,14 +2111,35 @@
             "author": "Seema Beniwal",
             "link": ""
           }
+        },
+        "article_Mc48nt": {
+          "type": "article",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Magnesium_2.png",
+            "title": "Is Creatine Safe for Kidneys?...",
+            "excerpt": "Concerned about kidney health and creatine? Explore the safety of...",
+            "author": "Seema Beniwal",
+            "link": ""
+          }
+        },
+        "article_CYxjyw": {
+          "type": "article",
+          "settings": {
+            "image_url": "https://cdn.hyugalife.com/banner/feature/Glutathione_16_3.png",
+            "title": "Top 10 Best Whey Protein...",
+            "excerpt": "Discover the top 10 best whey protein supplements in India for...",
+            "author": "Seema Beniwal",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "a1",
         "a2",
         "a3",
-        "a4",
-        "a5"
+        "a5",
+        "article_Mc48nt",
+        "article_CYxjyw"
       ],
       "settings": {
         "heading": "Easy Reads, Practical Advice",
