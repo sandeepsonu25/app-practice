@@ -1088,6 +1088,124 @@ body.hyuga-store #MainContent .shopify-section {
   }
 }
 
+/* Blog rail */
+.hyuga-blog {
+  margin: 12px 0 32px;
+}
+
+.hyuga-blog__viewport {
+  position: relative;
+}
+
+.hyuga-blog__rail {
+  --hyuga-rail-visible: 1.25;
+  padding-bottom: 4px;
+}
+
+@media (min-width: 750px) {
+  .hyuga-blog__rail {
+    --hyuga-rail-visible: 3;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hyuga-blog__rail {
+    --hyuga-rail-visible: 4;
+  }
+}
+
+.hyuga-blog-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e8e8ee;
+  border-radius: 12px;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.hyuga-blog-card__media {
+  aspect-ratio: 16 / 10;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+
+.hyuga-blog-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hyuga-blog-card__placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #eef2ff, #e5e7eb);
+}
+
+.hyuga-blog-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 14px 16px;
+  flex: 1;
+}
+
+.hyuga-blog-card__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1f2937;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.7em;
+}
+
+.hyuga-blog-card__excerpt {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #6b7280;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hyuga-blog-card__author {
+  margin: auto 0 0;
+  padding-top: 4px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.hyuga-blog__next {
+  position: absolute;
+  right: 6px;
+  top: 42%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #4b5563;
+  box-shadow: 0 4px 16px rgba(17, 24, 39, 0.14);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.hyuga-blog__next:hover {
+  color: #1a1a5e;
+}
+
 /* Why Choose HyugaLife */
 .hyuga-why {
   margin: 12px 0 32px;

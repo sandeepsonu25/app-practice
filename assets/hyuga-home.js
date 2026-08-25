@@ -64,5 +64,16 @@
         track.scrollBy({ left: step, behavior: 'smooth' });
       });
     });
+
+    document.querySelectorAll('[data-hyuga-blog]').forEach(function (section) {
+      var rail = section.querySelector('[data-hyuga-blog-rail]');
+      var next = section.querySelector('[data-hyuga-blog-next]');
+      if (!rail || !next) return;
+      next.addEventListener('click', function () {
+        var card = rail.querySelector('.hyuga-blog-card');
+        var step = card ? card.getBoundingClientRect().width + 12 : rail.clientWidth * 0.8;
+        rail.scrollBy({ left: step, behavior: 'smooth' });
+      });
+    });
   });
 })();
